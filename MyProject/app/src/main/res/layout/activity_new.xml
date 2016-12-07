@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.myproject.Activity.NewActivity">
+    <TextView
+        android:background="@drawable/title_bar"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_category"
+        android:textSize="25dp"
+        android:text="新闻类别：MainActivity"
+        android:textColor="#EF60ff"/>
+<FrameLayout
+    android:id="@+id/content_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+</FrameLayout>
+</LinearLayout>

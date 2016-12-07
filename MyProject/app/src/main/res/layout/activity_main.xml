@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.myproject.Activity.MainActivity">
+
+ <!--   <ViewFlipper
+        android:id="@+id/vf"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>-->
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:id="@+id/vp"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:background="@drawable/bottom_bar"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+        <TextView
+
+            android:textColor="#ff00ff00"
+            android:enabled="true"
+            android:clickable="true"
+            android:id="@+id/tab_01"
+            android:text="新闻"
+            android:textSize="27dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:textColor="#ff00ff00"
+            android:enabled="true"
+            android:id="@+id/tab_02"
+            android:clickable="true"
+            android:text="赛事"
+            android:textSize="27dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:enabled="true"
+            android:id="@+id/tab_03"
+            android:text="词典"
+            android:clickable="true"
+            android:textColor="#ff00ff00"
+            android:textSize="27dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:enabled="true"
+            android:textColor="#ff00ff00"
+            android:id="@+id/tab_04"
+            android:clickable="true"
+            android:text="笔记"
+            android:textSize="27dp"
+            android:gravity="center"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

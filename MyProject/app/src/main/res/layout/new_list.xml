@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="100dp"
+        android:id="@+id/new_resource"
+        android:textColor="#000000"
+        android:text="新闻来源"
+        android:gravity="center"
+        android:textSize="20sp"/>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="100dp"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/item13"
+        android:id="@+id/new_pic"
+        android:layout_width="75dp"
+        android:layout_height="75dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="#000000"
+        android:layout_height="25dp"
+        android:id="@+id/new_time"
+        android:text="这是时间"
+        android:gravity="center"
+        android:textSize="10sp"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/new_title"
+            android:text="这是标题！！！！！！！！！！！！！！！"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/new_desc"
+            android:layout_width="match_parent"
+            android:textColor="#000000"
+            android:alpha="0.5"
+            android:layout_height="0dp"
+            android:text="这是摘要@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+            android:textSize="13sp"
+            android:lines="4"
+            android:ellipsize="end"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
