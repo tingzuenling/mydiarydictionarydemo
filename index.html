@@ -1,0 +1,1483 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0058)http://blog.csdn.net/lmj623565791/article/details/51319147 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">   
+   
+
+    <script src="./index_files/hm.js"></script><script src="./index_files/hm(1).js"></script><script src="./index_files/hm(2).js"></script><script type="text/javascript" src="./index_files/tracking.js" charset="utf-8"></script>  
+
+    <script type="text/javascript">
+        var protocol = window.location.protocol;
+        document.write('<script type="text/javascript" src="' + protocol + '//csdnimg.cn/pubfooter/js/repoAddr2.js?v=' + Math.random() + '"></' + 'script>');
+    </script><script type="text/javascript" src="./index_files/repoAddr2.js"></script>
+
+  
+ <meta http-equiv="Cache-Control" content="no-siteapp"><link rel="alternate" media="handheld" href="http://blog.csdn.net/lmj623565791/article/details/51319147#">
+
+    <title>如何利用github打造博客专属域名 - Hongyang
+        - 博客频道 - CSDN.NET</title>
+    
+    <meta name="description" content="[ddm]ishit=0isset=1content1=O6rl6fZYDqxGUo/kURXPNfAPs0hQzTpM4t3oZgm1pdPccWGWpxcdwXzRHfTmFbUsDrudBDTsmUSHb8H4Eiw9cTkixKoRd5r5Yl56qU3nWp2qAQ==content2=O6rl6fZYDqxGUo/kURXPNfAPs0hQzWBMsN2zZg21udO">
+    <script src="./index_files/jquery.js" type="text/javascript"></script>
+      <script type="text/javascript" src="./index_files/jquery-version.js"></script>
+    <script type="text/javascript" src="http://static.blog.csdn.net/scripts/ad.js?v=1.1"></script>
+        <!--new top-->
+       
+        <link rel="stylesheet" href="./index_files/index.css">
+        <!--new top-->
+    
+      <!-- ad begin -->
+         <script language="javascript" type="text/javascript" src="http://ads.csdn.net/js/tracking.js"></script>
+    <!-- ad end-->
+
+    <link rel="Stylesheet" type="text/css" href="./index_files/style.css">
+    <link id="RSSLink" title="RSS" type="application/rss+xml" rel="alternate" href="http://blog.csdn.net/lmj623565791/rss/list">
+    <link rel="shortcut icon" href="http://c.csdnimg.cn/public/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="./index_files/default.css">
+ 
+
+
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?6bcd52f51e9b3dce32bec4a3997715ac";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+<script src="./index_files/share.js"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Hover_Arrow {position: absolute; width: 15px; height: 11px; cursor: pointer}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_Menu_Close {position: absolute; width: 31px; height: 31px; top: -15px; left: -15px}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><link rel="stylesheet" type="text/css" href="./index_files/job_reco.css"><link href="./index_files/bdsstyle.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="./index_files/style(1).css"><link type="text/css" rel="stylesheet" href="./index_files/style(2).css"><script src="./index_files/logger.js"></script><link rel="stylesheet" href="./index_files/share_style0_16.css"></head>
+<body dh="1" rlt="1"><div id="MathJax_Message" style="display: none;"></div><iframe frameborder="0" style="display: none;" src="./index_files/saved_resource.html"></iframe>
+    <!-- 广告位开始 -->
+        <ins data-revive-zoneid="149" data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57"></ins>
+    <!-- 广告位结束 -->
+
+    
+   
+      <!--new top-->
+    <script id="toolbar-tpl-scriptId" fixed="true" prod="blog" skin="black" src="./index_files/html.js" type="text/javascript"></script><div class="csdn-toolbar csdn-toolbar-skin-black ">        <div class="container row center-block ">          <div class="col-md-3 pull-left logo clearfix"><a href="http://www.csdn.net/?ref=toolbar" title="CSDN首页" target="_blank" class="icon"></a><a title="频道首页" href="http://blog.csdn.net/?ref=toolbar_logo" class="img blog-icon"></a></div>          <div class="pull-right login-wrap unlogin">            <ul class="btns">              <li class="loginlink"><a href="https://passport.csdn.net/account/login?ref=toolbar" target="_top">登录&nbsp;</a>|<a target="_top" href="http://passport.csdn.net/account/mobileregister?ref=toolbar&amp;action=mobileRegister">&nbsp;注册</a></li>              <li class="search">                <div class="icon on-search-icon">                  <div class="wrap">                    <div class="curr-icon-wrap">                      <div class="curr-icon"></div>                    </div>                    <form action="http://so.csdn.net/search" method="get" target="_blank">                      <input type="hidden" value="toolbar" name="ref" accesskey="2">                      <div class="border">                        <input placeholder="搜索" type="text" value="" name="q" accesskey="2"><span class="icon-enter-sm"></span>                      </div>                    </form>                  </div>                </div>              </li>              <li class="favor">                <div class="icon on-favor-icon">                  <div class="wrap">                    <div class="curr-icon-wrap">                      <div class="curr-icon"></div>                    </div>                    <div style="display:none;" class="favor-success"><span class="msg">收藏成功</span>                      <div class="btns"><span class="btn btn-primary ok">确定</span></div>                    </div>                    <div style="display:none;" class="favor-failed"><span class="icon-danger-lg"></span><span class="msg">收藏失败，请重新收藏</span>                      <div class="btns"><span class="btn btn-primary ok">确定</span></div>                    </div>                    <form role="form" class="form-horizontal favor-form">                      <div class="form-group">                        <div class="clearfix">                          <label for="input-title" class="col-sm-2 control-label">标题</label>                          <div class="col-sm-10">                            <input id="inputTitle" type="text" placeholder="" class="title form-control">                          </div>                        </div>                        <div class="alert alert-danger"><strong></strong>标题不能为空</div>                      </div>                      <div class="form-group">                        <label for="input-url" class="col-sm-2 control-label">网址</label>                        <div class="col-sm-10">                          <input id="input-url" type="text" placeholder="" class="url form-control">                        </div>                      </div>                      <div class="form-group">                        <label for="input-tag" class="col-sm-2 tag control-label">标签</label>                        <div class="col-sm-10">                          <input id="input-tag" type="text" class="form-control tag">                        </div>                      </div>                      <div class="form-group">                        <label for="input-description" class="description col-sm-2 control-label">摘要</label>                        <div class="col-sm-10">                          <textarea id="input-description" class="form-control description"></textarea>                        </div>                      </div>                      <div class="form-group">                        <div class="col-sm-offset-2 col-sm-10 ft">                          <div class="col-sm-4 pull-left">                            <div class="checkbox">                              <label>                                <input type="checkbox" name="share" checked="checked" class="share">公开                              </label>                            </div>                          </div>                          <div class="col-sm-8 pull-right favor-btns">                            <button type="button" class="cancel btn btn-default">取消</button>                            <button type="submit" class="submit btn btn-primary">收藏</button>                          </div>                        </div>                      </div>                    </form>                  </div>                </div>              </li>              <li class="notify">                <div style="display:none" class="number"></div>                <div style="display:none" class="icon-hasnotes-sm"></div>                <div id="header_notice_num"></div>                <div class="icon on-notify-icon">                  <div class="wrap">                    <div class="curr-icon-wrap">                      <div class="curr-icon"></div>                    </div>                    <div id="note1" class="csdn_note">                      <div class="box"></div>                    <iframe src="./index_files/saved_resource(1).html" frameborder="0" allowtransparency="true" style="z-index:-1;position:absolute;top:0;left:0;width:100%;height:100%;background:transparent"></iframe></div>                  </div>                </div>              </li>              <li class="ugc">                <div class="icon on-ugc-icon">                  <div class="wrap clearfix">                    <div class="curr-icon-wrap">                      <div class="curr-icon"></div>                    </div>                    <dl>                      <dt><a href="http://geek.csdn.net/news/expert?ref=toolbar" target="_blank" class="p-news clearfix" style="display:none;"><em class="icon"></em><span>分享资讯</span></a></dt>                      <dt style="border: none;"><a href="http://u.download.csdn.net/upload?ref=toolbar" target="_blank" class="p-doc clearfix"><em class="icon"></em><span>传PPT/文档</span></a></dt>                      <dt><a href="http://bbs.csdn.net/topics/new?ref=toolbar" target="_blank" class="p-ask clearfix"><em class="icon"></em><span>提问题</span></a></dt>                      <dt><a href="http://write.blog.csdn.net/postedit?ref=toolbar" target="_blank" class="p-blog clearfix"><em class="icon"></em><span>写博客</span></a></dt>                      <dt><a href="http://u.download.csdn.net/upload?ref=toolbar" target="_blank" class="p-src clearfix"><em class="icon"></em><span>传资源</span></a></dt>                      <dt><a href="https://code.csdn.net/projects/new?ref=toolbar" target="_blank" class="c-obj clearfix"><em class="icon"></em><span>创建项目</span></a></dt>                      <dt><a href="https://code.csdn.net/snippets/new?ref=toolbar" target="_blank" class="c-code clearfix"><em class="icon"></em><span>创建代码片</span></a></dt>                    </dl>                  </div>                </div>              </li>              <li class="profile">                <div class="icon on-profile-icon"><img src="./index_files/100x100.jpg" class="curr-icon-img">                  <div class="wrap clearfix">                    <div class="curr-icon-wrap">                      <div class="curr-icon"></div>                    </div>                    <div class="bd">                      <dl class="clearfix">                        <dt class="pull-left img"><a target="_blank" href="http://my.csdn.net/?ref=toolbar" class="avatar"><img src="./index_files/100x100.jpg"></a></dt>                        <dd class="info" style="border: none;"><a target="_blank" href="http://my.csdn.net/?ref=toolbar" class="nickname"></a><a class="set-nick" href="https://passport.csdn.net/account/profile">设置昵称<span class="write-icon"></span></a><span class="dec"><a class="fill-dec" href="http://my.csdn.net/" target="_blank">编辑自我介绍，让更多人了解你<span class="write-icon"></span></a></span></dd>                      </dl>                    </div>                    <div class="ft clearfix"><a target="_blank" href="http://my.csdn.net/my/account/changepwd?ref=toolbar" class="pull-left"><span class="icon-cog"></span>帐号设置</a><a href="https://passport.csdn.net/account/logout?ref=toolbar" target="_top" class="pull-left" style="margin-left:132px; width:18px; height:27px; white-space:nowrap; overflow:hidden;"><span class="icon-signout"></span><span class="out">退出</span></a></div>                  </div>                </div>              </li>              <li class="apps">                <div id="chasnew123" class="hasnew" style="display: none;"></div>                <div id="cappsarea123" class="icon on-apps-icon">                  <div class="wrap clearfix">                    <div class="curr-icon-wrap">                      <div class="curr-icon"></div>                    </div>                  <div class="detail">                    <dl>                      <dt>                        <h5>社区</h5>                      </dt>                      <dd> <a href="http://blog.csdn.net/?ref=toolbar" target="_blank">博客</a></dd>                      <dd> <a href="http://bbs.csdn.net/?ref=toolbar" target="_blank">论坛</a></dd>                      <dd> <a href="http://download.csdn.net/?ref=toolbar" target="_blank">下载</a></dd>                      <dd> <a href="http://lib.csdn.net/?ref=toolbar" target="_blank">知识库</a></dd>                      <dd><a href="http://ask.csdn.net/?ref=toolbar" target="_blank">技术问答</a></dd>                      <dd><a href="http://geek.csdn.net/?ref=toolbar" target="_blank">极客头条</a></dd>                      <dd style="display:none"> <a href="http://hero.csdn.net/?ref=toolbar" target="_blank">英雄会</a></dd>                    </dl>                  </div>                  <div class="detail">                    <dl>                      <dt>                        <h5>服务</h5>                      </dt>                      <dd style="display:none"> <a href="http://job.csdn.net/?ref=toolbar" target="_blank">JOB<img src="./index_files/new.gif" style="display: none; margin-top: -26px; width: 23px;"></a></dd>                      <dd> <a href="http://edu.csdn.net/?ref=toolbar" target="_blank">学院<img src="./index_files/new.gif" style="display: none; margin-top: -26px; width: 23px;"></a></dd>                      <dd> <a href="https://code.csdn.net/?ref=toolbar" target="_blank">CODE</a></dd>                      <dd> <a href="http://huiyi.csdn.net/?ref=toolbar" target="_blank">活动</a></dd>                      <dd> <a href="http://www.csto.com/?ref=toolbar" target="_blank">CSTO</a></dd>                      <dd> <a href="http://mall.csdn.net/?ref=toolbar" target="_blank">C币兑换<img src="./index_files/new.gif" style="display: none; margin-top: -26px; width: 23px;"></a></dd>                    </dl>                  </div>                  <div class="detail last">                    <dl>                      <dt>                        <h5>俱乐部</h5>                      </dt>                      <dd> <a href="http://cto.csdn.net/?ref=toolbar" target="_blank">CTO俱乐部</a></dd>                      <dd> <a href="http://student.csdn.net/?ref=toolbar" target="_blank">高校俱乐部</a></dd>                    </dl>                  </div>                </div>              </div>            </li>            </ul>          </div>        </div>    </div>
+     <!--new top-->
+    <div id="container">
+        <div id="header">
+    <div class="header">
+        <div id="blog_title">
+            <h2>
+                <a href="http://blog.csdn.net/lmj623565791">Hongyang</a></h2>
+            <h3>生命不息，奋斗不止，万事起于忽微，量变引起质变</h3>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+        
+     
+    </div>
+</div>
+<div id="navigator">
+    <div class="navigator_bg">
+    </div>
+    <div class="navigator">
+        <ul>           
+                <li id="btnContents"><a href="http://blog.csdn.net/lmj623565791?viewmode=contents"><span onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_mulu&#39;])">
+                    <img src="./index_files/ico_list.gif">目录视图</span></a></li>
+                <li id="btnView"><a href="http://blog.csdn.net/lmj623565791?viewmode=list"><span onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_zhaiyao&#39;])">
+                    <img src="./index_files/ico_summary.gif">摘要视图</span></a></li>
+                <li id="btnRss"><a href="http://blog.csdn.net/lmj623565791/rss/list"><span onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_RSS&#39;])">
+                    <img src="./index_files/ico_rss.gif">订阅</span></a></li>                
+            
+
+            </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    var username = "lmj623565791";
+    var _blogger = username;
+    var blog_address = "http://blog.csdn.net/lmj623565791";
+    var static_host = "http://static.blog.csdn.net";
+    var currentUserName = "";  
+</script>
+
+        <div id="body">
+            <div id="main">
+                <div class="main">
+                        <div class="ad_class">
+<div class="notice tracking-ad" data-mod="popu_3"> 
+<a href="http://geek.csdn.net/news/detail/126445">
+<font color="red">聚焦行业最佳实践，BDTC 2016完整议程公布
+</font></a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://e.cn.miaozhen.com/r/k=6001967&amp;p=4Zm&amp;rt=2&amp;ns=__IP__&amp;ni=__IESID__&amp;v=__LOC__&amp;vo=3b56fd611&amp;vr=2&amp;o=https%3A%2F%2Fwww.ibm.com%2Fdeveloperworks%2Fcn%2Fjava%2Fintro-to-java-course%2Findex.html%3Fcm_mmc%3Ddwchina-_-homepage-_-csdn-_-learn">
+<font color="blue">Java 编程入门（系列）
+</font></a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="http://blog.csdn.net/turingbooks/article/details/53079366">
+<font color="red">程序员11月书讯，评论得书啦 
+</font></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="http://lib.csdn.net/">
+<font color="blue">免费的知识库，你的知识库
+</font></a>
+
+
+
+
+</div>                        </div>
+                        
+
+
+<!-- 广告位开始 -->
+<ins data-revive-zoneid="72" data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57"></ins>
+<!-- 广告位结束 -->
+
+  
+<link href="./index_files/comment1.css" type="text/css" rel="stylesheet">
+<link href="./index_files/style1.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/javascript" src="./index_files/jquery.cookie.js"></script>
+<script type="text/javascript" src="./index_files/main.js"></script>
+<link rel="stylesheet" href="./index_files/markdown_views.css">
+<link rel="stylesheet" href="./index_files/category.css">
+<script type="text/javascript" src="./index_files/MathJax.js"></script>
+<script type="text/javascript" src="./index_files/web-storage-cache.min.js"></script>
+<script type="text/javascript" src="./index_files/replace.min.js"></script>
+
+
+
+
+  <script type="text/ecmascript">
+      window.quickReplyflag = true;
+           
+            var isBole = false;
+            
+          
+    </script>
+<div id="article_details" class="details">
+    <div class="article_title">   
+         <span class="ico ico_type_Original"></span>
+
+
+    <h1>
+        <span class="link_title"><a href="http://blog.csdn.net/lmj623565791/article/details/51319147">
+        如何利用github打造博客专属域名            
+        </a></span>
+    </h1>
+</div>
+
+   
+
+        <div class="article_manage clearfix">
+        <div class="article_l">
+            <span class="link_categories">
+            标签：
+              <a href="http://www.csdn.net/tag/github" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_tag&#39;]);">github</a><a href="http://www.csdn.net/tag/%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_tag&#39;]);">个人博客</a><a href="http://www.csdn.net/tag/%e5%9f%9f%e5%90%8d" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_tag&#39;]);">域名</a>
+            </span>
+        </div>
+        <div class="article_r">
+            <span class="link_postdate">2016-05-05 08:49</span>
+            <span class="link_view" title="阅读次数">24147人阅读</span>
+            <span class="link_comments" title="评论次数"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#comments" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_pinglun&#39;])">评论</a>(77)</span>
+            <span class="link_collect tracking-ad" data-mod="popu_171"> <a href="javascript:void(0);" onclick="javascript:collectArticle(&#39;如何利用github打造博客专属域名&#39;,&#39;51319147&#39;);return false;" title="收藏">收藏</a></span>
+             <span class="link_report"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" onclick="javascript:report(51319147,2);return false;" title="举报">举报</a></span>
+
+        </div>
+    </div>
+    <div class="embody" style="display:none" id="embody">
+        <span class="embody_t">本文章已收录于：</span>
+        <div class="embody_c" id="lib" value="{&quot;err&quot;:0,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:[]}"></div>
+    </div>
+    <style type="text/css">        
+            .embody{
+                padding:10px 10px 10px;
+                margin:0 -20px;
+                border-bottom:solid 1px #ededed;                
+            }
+            .embody_b{
+                margin:0 ;
+                padding:10px 0;
+            }
+            .embody .embody_t,.embody .embody_c{
+                display: inline-block;
+                margin-right:10px;
+            }
+            .embody_t{
+                font-size: 12px;
+                color:#999;
+            }
+            .embody_c{
+                font-size: 12px;
+            }
+            .embody_c img,.embody_c em{
+                display: inline-block;
+                vertical-align: middle;               
+            }
+             .embody_c img{               
+                width:30px;
+                height:30px;
+            }
+            .embody_c em{
+                margin: 0 20px 0 10px;
+                color:#333;
+                font-style: normal;
+            }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            try
+            {
+                var lib = eval("("+$("#lib").attr("value")+")");
+                var html = "";
+                if (lib.err == 0) {
+                    $.each(lib.data, function (i) {
+                        var obj = lib.data[i];
+                        //html += '<img src="' + obj.logo + '"/>' + obj.name + "&nbsp;&nbsp;";
+                        html += ' <a href="' + obj.url + '" target="_blank">';
+                        html += ' <img src="' + obj.logo + '">';
+                        html += ' <em><b>' + obj.name + '</b></em>';
+                        html += ' </a>';
+                    });
+                    if (html != "") {
+                        setTimeout(function () {
+                            $("#lib").html(html);                      
+                            $("#embody").show();
+                        }, 100);
+                    }
+                }      
+            } catch (err)
+            { }
+            
+        });
+    </script>
+      <div class="category clearfix">
+        <div class="category_l">
+           <img src="./index_files/category_icon.jpg">
+            <span>分类：</span>
+        </div>
+        <div class="category_r">
+                    <label onclick="GetCategoryArticles(&#39;2680597&#39;,&#39;lmj623565791&#39;,&#39;top&#39;,&#39;51319147&#39;);">
+                        <span onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_fenlei&#39;]);">【Android 精彩案例】<em>（36）</em></span>
+                      <img class="arrow-down" src="./index_files/arrow_triangle _down.jpg" style="display:inline;">
+                      <img class="arrow-up" src="./index_files/arrow_triangle_up.jpg" style="display:none;">
+                        <div class="subItem">
+                            <div class="subItem_t"><a href="http://blog.csdn.net/lmj623565791/article/category/2680597" target="_blank">作者同类文章</a><i class="J_close">X</i></div>
+                            <ul class="subItem_l" id="top_2680597">                            
+                            </ul>
+                        </div>
+                    </label>                    
+        </div>
+    </div>
+    <script type="text/javascript" src="./index_files/category.js"></script>  
+        <div class="bog_copyright">         
+            <p class="copyright_p">版权声明：本文为博主原创文章，未经博主允许不得转载。</p>
+        </div>
+
+  
+
+  
+  
+     
+
+<div style="clear:both"></div><div style="border:solid 1px #ccc; background:#eee; float:left; min-width:200px;padding:4px 10px;"><p style="text-align:right;margin:0;"><span style="float:left;">目录<a href="http://blog.csdn.net/lmj623565791/article/details/51319147#" title="系统根据文章中H1到H6标签自动生成文章目录">(?)</a></span><a href="http://blog.csdn.net/lmj623565791/article/details/51319147#" onclick="javascript:return openct(this);" title="展开">[+]</a></p><ol style="display:none;margin-left:14px;padding-left:14px;line-height:160%;"><li><a href="http://blog.csdn.net/lmj623565791/article/details/51319147#t0">一概述</a></li><li><a href="http://blog.csdn.net/lmj623565791/article/details/51319147#t1">二Github Pages的使用</a></li><ol><li><a href="http://blog.csdn.net/lmj623565791/article/details/51319147#t2">1新建仓库</a></li><li><a href="http://blog.csdn.net/lmj623565791/article/details/51319147#t3">2更新内容</a></li></ol><li><a href="http://blog.csdn.net/lmj623565791/article/details/51319147#t4">三打造博客专属域名</a></li><ol><li><a href="http://blog.csdn.net/lmj623565791/article/details/51319147#t5">1域名购买与解析</a></li><li><a href="http://blog.csdn.net/lmj623565791/article/details/51319147#t6">2CNAME</a></li><li><a href="http://blog.csdn.net/lmj623565791/article/details/51319147#t7">3神奇的JS</a></li></ol></ol></div><div style="clear:both"></div><div id="article_content" class="article_content">
+        <div class="markdown_views"><blockquote>
+  <p>转载请标明出处： <br>
+  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147">http://blog.csdn.net/lmj623565791/article/details/51319147</a>； <br>
+  本文出自:<a href="http://blog.csdn.net/lmj623565791/">【张鸿洋的博客】</a></p>
+</blockquote>
+
+
+
+<h2 id="一概述"><a name="t0"></a>一、概述</h2>
+
+<p>哈，本篇博客不属于<a href="http://lib.csdn.net/base/15" class="replace_word" title="Android知识库" target="_blank" style="color:#df3434; font-weight:bold;">Android</a>技术类的文章，但却有非常高的实用性。如果你心细的话，你会发现现在访问<a href="http://blog.csdn.net/lmj623565791/article/details/zhanghongyang.com">zhanghongyang.com</a>或者<a href="http://blog.csdn.net/lmj623565791/article/details/guolin.tech">guolin.tech</a>你会发现最终跳转的是我们的csdn博客的列表目录。</p>
+
+<blockquote>
+  <p>有人会说，这个简单哇，买个域名，设置下域名解析不就好了么？</p>
+</blockquote>
+
+<p>这样是不行的，关键在于我的博客站点是csdn所提供的，归属于csdn的blog子域名下，但是在设置域名解析的时候只能填写ip，如果你<code>ping 我的博客地址</code>最终得到的ip可能是csdn某台服务器的甚至是拿不到的，所以光填写ip是不行的，不过如果你是自己搭建的服务器站点就可以简单设置解析ip就可以了。</p>
+
+<p>ok，但是大多数人可能还我一样并没有足够的精力去维护个人博客站点，而选择csdn、简书、博客园等平台编写博客。但是这类平台所提供的url想必是非常长的，例如我的：</p>
+
+<ul>
+<li><a href="http://blog.csdn.net/lmj623565791">http://blog.csdn.net/lmj623565791</a> </li>
+</ul>
+
+<p>一般人太难记住了，所以我希望买一个好记的域名</p>
+
+<ul>
+<li><a href="http://www.zhanghongyang.com/">zhanghongyang.com</a>（张鸿洋.com）</li>
+</ul>
+
+<p>这样大家一眼就能记住，一眼不够两眼肯定没问题。</p>
+
+<p>ok，那么针对我这样的问题，有什么好的且免费的方案呢？</p>
+
+<p>这个问题，郭神和我在dota群里讨论过，最终的方案有两个选择：</p>
+
+<ol>
+<li>买个服务器，搭建个服务做页面跳转（redirect或者js跳转）.</li>
+<li>利用github提供的<code>github pages</code></li>
+</ol>
+
+<p>方案1我是不会选的，因为租服务器这种事情要钱哇；最终选择了方案二，利用github pages。</p>
+
+<p>很多人可能并不清楚<code>github pages</code>是干嘛的，官网是：<a href="https://pages.github.com/">https://pages.github.com/</a>，其实算github提供的一个服务，我们可以免费的再其上面搭建自己的网站，也有很多人利用<code>github pages</code>作为自己的个人博客站点。</p>
+
+<p>接下来，我们就看<code>github pages</code>如何使用，以及我是如何利用它做页面跳转的。</p>
+
+<p>那么，通过本文的学习，你也可以利用<code>github pages</code>搭建一个小站点，构建属于自己的网站，或者使用<code>github pages</code>维护个人博客都可以。</p>
+
+<blockquote>
+  <p>这里感谢郭神，该方案虽然一起讨论得出，但是对该方案的实施是在我之前的，此外大家可以关注他的博客。</p>
+</blockquote>
+
+
+
+<h2 id="二github-pages的使用"><a name="t1"></a>二、Github Pages的使用</h2>
+
+
+
+<h3 id="1新建仓库"><a name="t2"></a>（1）新建仓库</h3>
+
+<p>ok，首先你需要一个github的账号，立志作为一名优秀的程序员，这个账号是应该有的，如果没有赶快申请一个。</p>
+
+<p>有了账号以后，首先点击新建仓库，如图：</p>
+
+<p><img src="./index_files/20160504233503957" width="400px"></p>
+
+<p>然后到达仓库信息填写界面，如图：</p>
+
+<p><img src="./index_files/20160504234028998" width="600px"></p>
+
+<p>这里只要注意一个地方，就是仓库的名称，必须是：<code>你的用户名.github.io</code>，例如我的用户名是hongyangAndroid，我填写的仓库名称即为：<code>hongyangAndroid.github.io</code>。</p>
+
+
+
+<h3 id="2更新内容"><a name="t3"></a>（2）更新内容</h3>
+
+<p>有了仓库以后，你就可以去随意的更新内容了，如果你对html熟悉，你可以随便写个页面提交上去，比如我写个简单的html页面。</p>
+
+<p>先简单说一下如果更新github仓库中的内容：</p>
+
+<ol>
+<li><p><code>clone</code>到本地</p>
+
+<p>命令行进入硬盘上任意一个文件夹，然后执行</p>
+
+<pre class="prettyprint" name="code"><code class="hljs avrasm has-numbering">git clone https://github<span class="hljs-preprocessor">.com</span>/hongyangAndroid/hongyangAndroid<span class="hljs-preprocessor">.github</span><span class="hljs-preprocessor">.io</span><span class="hljs-preprocessor">.git</span>
+</code><ul class="pre-numbering"><li>1</li><li>2</li></ul><div class="save_code tracking-ad" data-mod="popu_249" style="display: none;"><a href="javascript:;"><img src="./index_files/save_snippets_01.png"></a></div><ul class="pre-numbering"><li>1</li><li>2</li></ul></pre>
+
+<p>注意修改为你的仓库地址，如果你的电脑上并不支持<a href="http://lib.csdn.net/base/28" class="replace_word" title="Git知识库" target="_blank" style="color:#df3434; font-weight:bold;">Git</a>命令，你可以搜索<code>git 安装</code>，先安装好git并配置好环境。</p></li>
+</ol>
+
+<p>到达本地之后，我们就可以准备好需要更新进去的页面了，比如我新建一个index.html内容如下：</p>
+
+
+
+<pre class="prettyprint" name="code"><code class="language-html hljs  has-numbering"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>这是我使用github pages搭建的个人站点。<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span></code><ul class="pre-numbering"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li></ul><div class="save_code tracking-ad" data-mod="popu_249" style="display: none;"><a href="javascript:;"><img src="./index_files/save_snippets.png"></a></div><ul class="pre-numbering"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li></ul></pre>
+
+<p>完成之后，记得保存，index.html必须和你clone下来的<code>.git</code>文件夹在同一个目录，如图：</p>
+
+<p><img src="./index_files/20160504234102373" width="500px"></p>
+
+<p>完成之后，就是提交了。</p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs perl has-numbering">/Users/zhy/github_repository/mine/hongyangAndroid.github.io
+git add .
+git commit -<span class="hljs-keyword">m</span> <span class="hljs-string">"更新index.html，编写博文测试"</span>
+[master c22f3d4] 更新<span class="hljs-keyword">index</span>.html，编写博文测试
+ <span class="hljs-number">1</span> file changed, <span class="hljs-number">6</span> insertions(+), <span class="hljs-number">1</span> deletion(-)
+git <span class="hljs-keyword">push</span>
+Username <span class="hljs-keyword">for</span> <span class="hljs-string">'https://github.com'</span>: hongyangAndroid
+Password <span class="hljs-keyword">for</span> <span class="hljs-string">'https://hongyangAndroid@github.com'</span>: 
+&gt;zhy$ 
+</code><ul class="pre-numbering"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li></ul><div class="save_code tracking-ad" data-mod="popu_249" style="display: none;"><a href="javascript:;"><img src="./index_files/save_snippets.png"></a></div><ul class="pre-numbering"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li></ul></pre>
+
+<p>注意首先命令行进入你的<code>hongyangAndroid.github.io</code>这个目录，然后依次执行<code>git add .</code> , <code>git commit -m "注释"</code>，<code>git push</code>，然后输入你的用户名，密码即可。</p>
+
+<p>更新成功之后，那就要恭喜你了，你的个人站点搭建成功了。</p>
+
+<p>你肯定又要说，你忽悠谁呢，顶多算你新建了一个仓库，提交了一个html文件而已，这里我要说，No No No，你的个人站点真的搭建好了，你已经可以给你的亲朋好友炫耀了，那么站点总要有个访问的地址吧，不然怎么访问呢？</p>
+
+<p>恩，是的，默认的地址是:</p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs avrasm has-numbering"><span class="hljs-label">http:</span>//hongyangandroid<span class="hljs-preprocessor">.github</span><span class="hljs-preprocessor">.io</span></code><ul class="pre-numbering"><li>1</li></ul><div class="save_code tracking-ad" data-mod="popu_249" style="display: none;"><a href="javascript:;"><img src="./index_files/save_snippets_01.png"></a></div><ul class="pre-numbering"><li>1</li></ul></pre>
+
+<p>例如我在浏览器访问这个地址：</p>
+
+<p><img src="./index_files/20160504234148374" width="500px"></p>
+
+<p>看到没有，我们刚才编写的简单html文件已经可以通过特定的url访问了，恩，你记得修改为你自己的url。</p>
+
+<p>如果你的html、css、js技术足够好，你完全可以利用这样的方式搭建一个高逼格且实用的个人站点，当然你也可以在上面搭建你的简历，方便打印，不过注意保护个人隐私。</p>
+
+<p>ok，到这里，我们已经教会大家如何利用<code>github pages</code>去搭建个人站点了，哈，免费的个人站点。如果我大学时候知道这个功能，我至少网页设计可以多拿10分，恩，那会我得了90分。</p>
+
+<p>至于这个页面好不好看，看你的才华了；这个页面能干什么，看你的想象了。</p>
+
+<p>ok，经过上面的内容，大家了解了利用github搭建个人站点，以及一些简单git命令的使用，但是我们文章的标题是：<code>如何利用github打造博客专属域名</code>，恩，接下来的标题就是专属域名。</p>
+
+<p>对了，如果你想利用这个做个人博客，以及有很多方便的工具辅助你完成了，例如<code>hexo</code>等，具体自行搜索。</p>
+
+
+
+<h2 id="三打造博客专属域名"><a name="t4"></a>三、打造博客专属域名</h2>
+
+
+
+<h3 id="1域名购买与解析"><a name="t5"></a>（1）域名购买与解析</h3>
+
+<p>ok，首先你要有个域名，那么就要去申请域名了，这里我们可以通过万网申请：<a href="https://wanwang.aliyun.com/">https://wanwang.aliyun.com/</a>，查找你想申请域名，如果可以买，购买就可以了。</p>
+
+<p>购买域名完成，进入万网的管理控制台：</p>
+
+<p><img src="./index_files/20160504234515750" width="600px"></p>
+
+<p>找到你已经购买的域名，点击解析，进入如下页面：</p>
+
+<p><img src="./index_files/20160504234645766" width="600px"></p>
+
+<p>然后点击添加解析，ip可以跟我填写的一致，当然以防发生变化，你可以ping你的url：</p>
+
+<p>例如：</p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs avrasm has-numbering"><span class="hljs-built_in">ping</span> www<span class="hljs-preprocessor">.hongyangandroid</span><span class="hljs-preprocessor">.github</span><span class="hljs-preprocessor">.io</span></code><ul class="pre-numbering"><li>1</li></ul><div class="save_code tracking-ad" data-mod="popu_249"><a href="javascript:;"><img src="./index_files/save_snippets.png"></a></div><ul class="pre-numbering"><li>1</li></ul></pre>
+
+<p>然后拿到返回的这个IP也可以。</p>
+
+<p>恩，根据上表，选择一个IP，填写两条记录其实就可以了：</p>
+
+<ul>
+<li>主机记录<code>www</code>对应<code>www.zhanghongyang.com</code></li>
+<li>主机记录<code>@</code>对应<code>zhanghongyang.com</code></li>
+</ul>
+
+<p>ok，设置完成解析之后，是不是直接访问域名就能跳转到我们刚才的github页面呢？</p>
+
+<p>恩，是不能，你去访问会显示404.</p>
+
+<p>我们还差一个环节。</p>
+
+
+
+<h3 id="2cname"><a name="t6"></a>（2）CNAME</h3>
+
+<p>差什么呢，差一个CNAME文件，这个文件需要提交到我们刚才创建的仓库，内容为我们的域名，例如:</p>
+
+<p><img src="./index_files/20160504234717157" width="400px"></p>
+
+<p>然后记得执行：<code>git add .</code> , <code>git commit -m "注释"</code>，<code>git push</code>，然后输入你的用户名，密码即可，忘了命令往前翻。</p>
+
+<p>更新成功之后，检查下，确定成功了，就可以通过你的域名访问了，例如：</p>
+
+<p><img src="./index_files/20160504234758817" width="400px"></p>
+
+<p>ok，到这里你已经学会了如何通过你购买的域名与github pages结合，即通过你购买的域名访问你的个人站点了。</p>
+
+<p>一般情况下，到这里就可以庆祝了，比如你想托管你的简单的网页设置。</p>
+
+<p>但是，如果你和我一样，博客在其他平台下托管，你想通过购买的域名跳转到该平台，你的任务还没结束。</p>
+
+
+
+<h3 id="3神奇的js"><a name="t7"></a>（3）神奇的JS</h3>
+
+<p>好吧，其实一点也不神奇，也就一行js跳转代码。</p>
+
+<p>对于我这种情况，我不需要任何内容，只要一行js就好了，我可以这么写<code>index.html</code>：</p>
+
+
+
+<pre class="prettyprint" name="code"><code class="language-html hljs  has-numbering"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+    window.location.href=<span class="hljs-string">"http://blog.csdn.net/lmj623565791"</span>;
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span></code><ul class="pre-numbering"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li></ul><div class="save_code tracking-ad" data-mod="popu_249"><a href="javascript:;"><img src="./index_files/save_snippets.png"></a></div><ul class="pre-numbering"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li></ul></pre>
+
+<p>然后我提交就搞定了，我就可以通过<code>zhanghongyang.com</code>直接跳转到我的博客页面了。</p>
+
+<p>but，心细的人并没有满足，比如我们手机访问的csdn列表页面和电脑的列表页面不同的，于是我们可以更加完善我们的js代码：</p>
+
+
+
+<pre class="prettyprint" name="code"><code class="language-javascript hljs  has-numbering">&lt;script&gt;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">browserRedirect</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-keyword">var</span> sUserAgent = navigator.userAgent.toLowerCase();
+    <span class="hljs-keyword">var</span> bIsIpad = sUserAgent.match(<span class="hljs-regexp">/ipad/i</span>) == <span class="hljs-string">"ipad"</span>;
+    <span class="hljs-keyword">var</span> bIsIphoneOs = sUserAgent.match(<span class="hljs-regexp">/iphone os/i</span>) == <span class="hljs-string">"iphone os"</span>;
+    <span class="hljs-keyword">var</span> bIsMidp = sUserAgent.match(<span class="hljs-regexp">/midp/i</span>) == <span class="hljs-string">"midp"</span>;
+    <span class="hljs-keyword">var</span> bIsUc7 = sUserAgent.match(<span class="hljs-regexp">/rv:1.2.3.4/i</span>) == <span class="hljs-string">"rv:1.2.3.4"</span>;
+    <span class="hljs-keyword">var</span> bIsUc = sUserAgent.match(<span class="hljs-regexp">/ucweb/i</span>) == <span class="hljs-string">"ucweb"</span>;
+    <span class="hljs-keyword">var</span> bIsAndroid = sUserAgent.match(<span class="hljs-regexp">/android/i</span>) == <span class="hljs-string">"android"</span>;
+    <span class="hljs-keyword">var</span> bIsCE = sUserAgent.match(<span class="hljs-regexp">/windows ce/i</span>) == <span class="hljs-string">"windows ce"</span>;
+    <span class="hljs-keyword">var</span> bIsWM = sUserAgent.match(<span class="hljs-regexp">/windows mobile/i</span>) == <span class="hljs-string">"windows mobile"</span>;
+    <span class="hljs-keyword">if</span> (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) ){
+        window.location.href=<span class="hljs-string">"http://blog.csdn.net/lmj623565791"</span>;
+    } <span class="hljs-keyword">else</span> {
+        window.location.href=<span class="hljs-string">"http://m.blog.csdn.net/blog/index?username=lmj623565791"</span>;
+    }
+}
+browserRedirect();
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span></span></code><ul class="pre-numbering"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li></ul><div class="save_code tracking-ad" data-mod="popu_249"><a href="javascript:;"><img src="./index_files/save_snippets.png"></a></div><ul class="pre-numbering"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li></ul></pre>
+
+<p>通过判断userAgent来确定是否是来自手机端的，如果是手机端的访问mobile的页面，否则访问pc端页面。这么心细也就没谁了，该代码是郭神编写的。</p>
+
+<p>ok，到此就真的结束了~~</p>
+
+<p>文章不长，但是值得玩一下，你可以设计个贺卡，做个网页版ppt，托管个网站原型，恩，甚至编写博客（记得利用各种工具<code>hexo</code>等），好了，看你的脑洞了~~</p>
+
+<hr>
+
+<p>欢迎关注我的微博： <br>
+<a href="http://weibo.com/u/3165018720">http://weibo.com/u/3165018720</a></p>
+
+<hr>
+
+<blockquote>
+  <p>群号：<font color="red">535687182</font>，欢迎入群</p>
+  
+  <p><a href="http://lib.csdn.net/base/5" class="replace_word" title="微信开发知识库" target="_blank" style="color:#df3434; font-weight:bold;">微信</a>公众号：hongyangAndroid <br>
+  （<font color="red">欢迎关注，本公众号已经开通投稿功能，欢迎联系我</font>） <br>
+  <img src="./index_files/1422600516_2905.jpg" width="200px"></p>
+</blockquote></div>
+        <script type="text/javascript">
+            $(function () {
+                $('pre.prettyprint code').each(function () {
+                    var lines = $(this).text().split('\n').length;
+                    var $numbering = $('<ul></ul>').addClass('pre-numbering').hide();
+                    $(this).addClass('has-numbering').parent().append($numbering);
+                    for (i = 1; i <= lines; i++) {
+                        $numbering.append($('<li></li>').text(i));
+                    };
+                    $numbering.fadeIn(1700);
+                });
+            });
+        </script>
+   
+</div>
+
+
+
+
+<!-- Baidu Button BEGIN -->
+
+
+
+
+<div class="bdsharebuttonbox tracking-ad bdshare-button-style0-16" style="float: right;" data-mod="popu_172" data-bd-bind="1481463456435">
+<a href="http://blog.csdn.net/lmj623565791/article/details/51319147#" class="bds_more" data-cmd="more" style="background-position:0 0 !important; background-image: url(http://bdimg.share.baidu.com/static/api/img/share/icons_0_16.png?v=d754dcc0.png) !important"></a>
+<a href="http://blog.csdn.net/lmj623565791/article/details/51319147#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间" style="background-position:0 -52px !important"></a>
+<a href="http://blog.csdn.net/lmj623565791/article/details/51319147#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博" style="background-position:0 -104px !important"></a>
+<a href="http://blog.csdn.net/lmj623565791/article/details/51319147#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博" style="background-position:0 -260px !important"></a>
+<a href="http://blog.csdn.net/lmj623565791/article/details/51319147#" class="bds_renren" data-cmd="renren" title="分享到人人网" style="background-position:0 -208px !important"></a>
+<a href="http://blog.csdn.net/lmj623565791/article/details/51319147#" class="bds_weixin" data-cmd="weixin" title="分享到微信" style="background-position:0 -1612px !important"></a>
+</div>
+<script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "1", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+<!-- Baidu Button END -->
+
+   <link rel="stylesheet" href="./index_files/blog_detail.css">
+
+    
+<!--172.16.140.15-->
+
+<!-- Baidu Button BEGIN -->
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=1536434" src="./index_files/bds_s_v2.js"></script>
+
+<script type="text/javascript">
+    document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->
+
+ 
+
+        <div id="digg" articleid="51319147">
+            <dl id="btnDigg" class="digg digg_disable" onclick="btndigga();">
+               
+                 <dt>顶</dt>
+                <dd>33</dd>
+            </dl>
+           
+              
+            <dl id="btnBury" class="digg digg_disable" onclick="btnburya();">
+              
+                  <dt>踩</dt>
+                <dd>3</dd>               
+            </dl>
+            
+        </div>
+     <div class="tracking-ad" data-mod="popu_222"><a href="javascript:void(0);">&nbsp;</a>   </div>
+    <div class="tracking-ad" data-mod="popu_223"> <a href="javascript:void(0);">&nbsp;</a></div>
+    <script type="text/javascript">
+                function btndigga() {
+                    $(".tracking-ad[data-mod='popu_222'] a").click();
+                }
+                function btnburya() {
+                    $(".tracking-ad[data-mod='popu_223'] a").click();
+                }
+            </script>
+
+   <ul class="article_next_prev">
+                <li class="prev_article"><span onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_shangyipian&#39;]);location.href=&#39;/lmj623565791/article/details/51304204&#39;;">上一篇</span><a href="http://blog.csdn.net/lmj623565791/article/details/51304204" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_shangyipian&#39;])">Retrofit2 完全解析 探索与okhttp之间的关系</a></li>
+                <li class="next_article"><span onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_xiayipian&#39;]);location.href=&#39;/lmj623565791/article/details/51339751&#39;;">下一篇</span><a href="http://blog.csdn.net/lmj623565791/article/details/51339751" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_xiayipian&#39;])">巧用ViewPager 打造不一样的广告轮播切换效果</a></li>
+    </ul>
+
+    <div style="clear:both; height:10px;"></div>
+
+
+        <div class="similar_article" style="">
+                <h4>我的同类文章</h4>
+                <div class="similar_c" style="margin:20px 0px 0px 0px">
+                    <div class="similar_c_t">
+                                <label class="similar_cur">
+                                    <span style="cursor:pointer" onclick="GetCategoryArticles(&#39;2680597&#39;,&#39;lmj623565791&#39;,&#39;foot&#39;,&#39;51319147&#39;);">【Android 精彩案例】<em>（36）</em></span>
+                                </label>
+                    </div>
+                   
+                    <div class="similar_wrap tracking-ad" data-mod="popu_141" style="max-height:195px;">
+                        <a href="http://blog.csdn.net/" style="display:none">http://blog.csdn.net</a>
+                        <ul class="similar_list fl"><li><em>•</em><a href="http://blog.csdn.net/lmj623565791/article/details/51339751" id="foot_aritcle_51339751undefined5401018189179358" target="_blank" title="巧用ViewPager 打造不一样的广告轮播切换效果">巧用ViewPager 打造不一样的广告轮播切换效果</a><span>2016-05-09</span><label><i>阅读</i><b>39722</b></label></li> <li><em>•</em><a href="http://blog.csdn.net/lmj623565791/article/details/45954255" id="foot_aritcle_45954255undefined8895901642647885" target="_blank" title="Android 不规则封闭区域填充 手指秒变油漆桶">Android 不规则封闭区域填充 手指秒变油漆桶</a><span>2015-05-25</span><label><i>阅读</i><b>25961</b></label></li> <li><em>•</em><a href="http://blog.csdn.net/lmj623565791/article/details/44283093" id="foot_aritcle_44283093undefined7040696606598704" target="_blank" title="Android FoldingLayout 折叠布局 原理及实现（二）">Android FoldingLayout 折叠布局 原理及实现（二）</a><span>2015-03-19</span><label><i>阅读</i><b>22477</b></label></li> <li><em>•</em><a href="http://blog.csdn.net/lmj623565791/article/details/44098729" id="foot_aritcle_44098729undefined8895814710935988" target="_blank" title="Android 自定义控件玩转字体变色  打造炫酷ViewPager指示器">Android 自定义控件玩转字体变色  打造炫酷ViewPager指示器</a><span>2015-03-09</span><label><i>阅读</i><b>34472</b></label></li> <li><em>•</em><a href="http://blog.csdn.net/lmj623565791/article/details/43371299" id="foot_aritcle_43371299undefined9859236653398389" target="_blank" title="Android 打造形形色色的进度条  实现可以如此简单">Android 打造形形色色的进度条  实现可以如此简单</a><span>2015-02-02</span><label><i>阅读</i><b>52129</b></label></li> </ul>
+
+                        <ul class="similar_list fr"><li><em>•</em><a href="http://blog.csdn.net/lmj623565791/article/details/49300989" id="foot_aritcle_49300989undefined11908417723772757" target="_blank" title="Android 高清加载巨图方案 拒绝压缩图片">Android 高清加载巨图方案 拒绝压缩图片</a><span>2015-10-21</span><label><i>阅读</i><b>59372</b></label></li> <li><em>•</em><a href="http://blog.csdn.net/lmj623565791/article/details/45788433" id="foot_aritcle_45788433undefined2037492161681116" target="_blank" title="Android 不规则图像填充 小玩着色游戏">Android 不规则图像填充 小玩着色游戏</a><span>2015-05-18</span><label><i>阅读</i><b>16504</b></label></li> <li><em>•</em><a href="http://blog.csdn.net/lmj623565791/article/details/44278417" id="foot_aritcle_44278417undefined3173014926653692" target="_blank" title="Android FoldingLayout 折叠布局 原理及实现（一）">Android FoldingLayout 折叠布局 原理及实现（一）</a><span>2015-03-16</span><label><i>阅读</i><b>26596</b></label></li> <li><em>•</em><a href="http://blog.csdn.net/lmj623565791/article/details/43649913" id="foot_aritcle_43649913undefined9201386389334845" target="_blank" title="Android 自定义控件 轻松实现360软件详情页">Android 自定义控件 轻松实现360软件详情页</a><span>2015-02-09</span><label><i>阅读</i><b>58401</b></label></li> <li><em>•</em><a href="http://blog.csdn.net/lmj623565791/article/details/43131133" id="foot_aritcle_43131133undefined9454300529315487" target="_blank" title="Android 打造炫目的圆形菜单  秒秒钟高仿建行圆形菜单">Android 打造炫目的圆形菜单  秒秒钟高仿建行圆形菜单</a><span>2015-01-29</span><label><i>阅读</i><b>59572</b></label></li> </ul>
+                    <a href="http://blog.csdn.net/lmj623565791/article/category/2680597" class="MoreArticle">更多文章</a></div>
+                </div>
+            </div>    
+    <script type="text/javascript">
+        $(function () {
+            GetCategoryArticles('2680597', 'lmj623565791','foot','51319147');
+        });
+    </script>
+      
+</div>
+<div id="suggest">
+
+</div>
+         <script language="javascript" type="text/javascript">     
+             $(function(){
+                 $.get("/lmj623565791/svc/GetSuggestContent/51319147",function(data){
+                     $("#suggest").html(data);
+                 });     
+             });             
+         </script>  
+
+
+<style>
+.blog-ass-articl dd {
+color: #369;
+width: 99%; /*修改行*/
+float: left;
+overflow: hidden;
+font: normal normal 12px/23px "SimSun";
+height: 23px;
+margin: 0;
+padding: 0 0 0 10px;
+margin-right: 30px;
+background: url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;
+}
+</style>
+
+ <link rel="stylesheet" href="./index_files/replace.css">
+
+<div id="relate" data-mod="popu_218" class="tracking-ad" style="display: block;">
+        <div class="relate_t">
+            <h3><span>参考知识库</span></h3>
+        </div>
+        <div class="relate_c"><dl class="relate_list"><dt><a target="_blank" href="http://lib.csdn.net/base/28"><img src="./index_files/1460535308634_634.jpg" alt="img"></a></dt><dd><h4><a target="_blank" href="http://lib.csdn.net/base/28">Git知识库</a></h4><p><label><span>1009</span><em>关注</em><i>|</i><span>391</span><em>收录</em></label></p></dd></dl><dl class="relate_list"><dt><a target="_blank" href="http://lib.csdn.net/base/15"><img src="./index_files/1455589744328_328.jpg" alt="img"></a></dt><dd><h4><a target="_blank" href="http://lib.csdn.net/base/15">Android知识库</a></h4><p><label><span>12784</span><em>关注</em><i>|</i><span>1190</span><em>收录</em></label></p></dd></dl><dl class="relate_list"><dt><a target="_blank" href="http://lib.csdn.net/base/5"><img src="./index_files/1452500582376_376.jpg" alt="img"></a></dt><dd><h4><a target="_blank" href="http://lib.csdn.net/base/5">微信开发知识库</a></h4><p><label><span>6476</span><em>关注</em><i>|</i><span>500</span><em>收录</em></label></p></dd></dl></div>
+</div>
+ 
+
+<dl class="blog-ass-articl" id="res-relatived"> 
+    <div class="embody embody_b" id="libkeyparent" style="display:none">
+            <span class="embody_t">更多资料请参考：</span>
+            <div class="embody_c" id="libkey"></div>
+    </div>
+
+
+     <dt><span>猜你在找</span></dt>    
+
+
+   
+
+
+    <div id="adCollege" style="width: 42%;float: left;"> 
+        <script src="./index_files/job_reco.js" type="text/javascript"></script> 
+        <script type="text/javascript">
+            csdn.position.showEdu({
+                sourceType: "blog",
+                searchType: "detail",
+                searchKey: "51319147",
+                username: "",
+                recordcount: "5",
+                containerId: "adCollege" //容器DIV的id。 
+            });
+        </script> 
+    <div class="tracking-ad" data-mod="popu_84"><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px; white-space: nowrap;"><a href="http://edu.csdn.net/course/detail/3290" title="Github视频教程" strategy="v4:content" target="_blank">Github视频教程</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px; white-space: nowrap;"><a href="http://edu.csdn.net/course/detail/1577" title="Html5服务器推送事件" strategy="v4:content" target="_blank">Html5服务器推送事件</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px; white-space: nowrap;"><a href="http://edu.csdn.net/course/detail/214" title=" 拥抱开源： Github使用指南" strategy="v4:content" target="_blank"> 拥抱开源： Github使用指南</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px; white-space: nowrap;"><a href="http://edu.csdn.net/course/detail/2927" title="HTML5/Node.js/JS 经验谈 (会员专属)" strategy="v4:content" target="_blank">HTML5/Node.js/JS 经验谈 (会员专属)</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px; white-space: nowrap;"><a href="http://edu.csdn.net/course/detail/3127" title="Jquery入门到精通（备html、css、JavaScript，javaee必备）" strategy="v4:content" target="_blank">Jquery入门到精通（备html、css、JavaScript，javaee必备）</a></dd></div></div>  
+
+    
+     <div id="res" data-mod="popu_36" class="tracking-ad" style="width: 42%; float: left; margin-right: 30px; display: block;"><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="http://blog.csdn.net/booooooooooooooooooo/article/details/50457935" title="将域名绑定到github pages 博客上" strategy="SearchAlgorithm">将域名绑定到github pages 博客上</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="http://blog.csdn.net/qq_23435721/article/details/50850350" title="利用github pages快速打造个人博客" strategy="SearchAlgorithm">利用github pages快速打造个人博客</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="http://blog.csdn.net/minglaihan/article/details/12587203" title="教你如何用免费域名打造属于自己的博客" strategy="SearchAlgorithm">教你如何用免费域名打造属于自己的博客</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="http://blog.csdn.net/fly_to_the_winds/article/details/4296854" title="自己打造动网博客二级域名系统" strategy="SearchAlgorithm">自己打造动网博客二级域名系统</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="http://blog.csdn.net/GarfieldEr007/article/details/49992713" title="使用 GitHub Jekyll 打造自己的免费独立博客" strategy="SearchAlgorithm">使用 GitHub Jekyll 打造自己的免费独立博客</a></dd></div>
+   
+</dl>
+
+
+<script type="text/javascript">
+    $(function () {
+        setTimeout(function () {
+            var searchtitletags = '如何利用github打造博客专属域名' + ',' + $("#tags").html();
+            searchService({
+                index: 'blog',
+                query: searchtitletags,
+                from: 5,
+                size: 5,
+                appendTo: '#res',
+                url: 'recommend',
+                his: 2,
+                client: "blog_cf_enhance",
+                tmpl: '<dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="#{ url }" title="#{ title }" strategy="#{ strategy }">#{ title }</a></dd>'
+            });
+        }, 500);
+    });    
+
+ </script>  
+
+    <div id="ad_cen">        
+                      <ins data-revive-zoneid="199" data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57"></ins>
+    </div>  
+
+<div class="comment_class">
+    <div id="comment_title" class="panel_head">
+        <span class="see_comment">查看评论</span><a name="comments"></a></div>
+    <div id="comment_list"><dl class="comment_item comment_topic" id="comment_item_6468001"><dt class="comment_head" floor="52">52楼 <span class="user"><a class="username" href="http://blog.csdn.net/UESTCAA" target="_blank">cocos2dx3</a> <span class="ptime">4天前 14:49发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6468001" username="UESTCAA"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/UESTCAA" target="_blank"><img src="./index_files/3_uestcaa.jpg" width="40" height="40"></a></dd><dd class="comment_body">dota群是亮点</dd></dl><dl class="comment_item comment_topic" id="comment_item_6405315"><dt class="comment_head" floor="51">51楼 <span class="user"><a class="username" href="http://blog.csdn.net/yingpaixiaochuan" target="_blank">Android大船</a> <span class="ptime">2016-11-12 10:24发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6405315" username="yingpaixiaochuan"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/yingpaixiaochuan" target="_blank"><img src="./index_files/3_yingpaixiaochuan.jpg" width="40" height="40"></a></dd><dd class="comment_body">CNAME文件中设置域名为www开头时，访问不带www开头的域名报404----------------后来，把CNAME中域名改为不带www的，访问www开头的和不带www的域名都可以正常访问了。</dd></dl><dl class="comment_item comment_topic" id="comment_item_6336245"><dt class="comment_head" floor="50">50楼 <span class="user"><a class="username" href="http://blog.csdn.net/u010785585" target="_blank">DylanAndroid</a> <span class="ptime">2016-10-13 19:43发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6336245" username="u010785585"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/u010785585" target="_blank"><img src="./index_files/3_u010785585.jpg" width="40" height="40"></a></dd><dd class="comment_body">鸿洋大神,对于我这个技术控看到这篇文章相见恨晚的感觉,今天终于搞好了,赞一个。不过我有个小问题，就是我用命令行提交代码到github为何我的github主页就提示是什么机器人在操作，什么也干不了了，很纳闷。</dd></dl><dl class="comment_item comment_topic" id="comment_item_6264163"><dt class="comment_head" floor="49">49楼 <span class="user"><a class="username" href="http://blog.csdn.net/Next_Second" target="_blank">杨小熊在学习</a> <span class="ptime">2016-09-08 18:34发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6264163" username="Next_Second"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/Next_Second" target="_blank"><img src="./index_files/3_next_second.jpg" width="40" height="40"></a></dd><dd class="comment_body">Hi 老师，今天我也按照这个步骤做了，但是由于第一次将CNAME写错了，本来应该写www.yangshaoxiong.tech的，但是写成了www.youngbear.tech。这样导致的结果是，我访问https://youngbear.github.io/会转到http://www.youngbear.tech/。后来，我将CNAME改过来了，但是这个问题仍然存在，请问这个问题该怎么解决？</dd><dl class="comment_item comment_reply" id="comment_item_6264646"><dt class="comment_head" floor="49">Re: <span class="user"><a class="username" href="http://blog.csdn.net/Next_Second" target="_blank">杨小熊在学习</a> <span class="ptime">2016-09-09 08:42发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6264646" username="Next_Second"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/Next_Second" target="_blank"><img src="./index_files/3_next_second.jpg" width="40" height="40"></a></dd><dd class="comment_body">回复Next_Second：找到原因了，清除一下缓存就可以了</dd></dl></dl><dl class="comment_item comment_topic" id="comment_item_6257508"><dt class="comment_head" floor="48">48楼 <span class="user"><a class="username" href="http://blog.csdn.net/sunshine2050_CSDN" target="_blank">sunshine2050_csdn</a> <span class="ptime">2016-09-05 09:43发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6257508" username="sunshine2050_CSDN"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/sunshine2050_CSDN" target="_blank"><img src="./index_files/3_sunshine2050_csdn.jpg" width="40" height="40"></a></dd><dd class="comment_body">为啥采用这种方法后，打开网站很慢</dd></dl><dl class="comment_item comment_topic" id="comment_item_6214166"><dt class="comment_head" floor="47">47楼 <span class="user"><a class="username" href="http://blog.csdn.net/idongz" target="_blank">向着太阳太阳</a> <span class="ptime">2016-08-16 19:04发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6214166" username="idongz"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/idongz" target="_blank"><img src="./index_files/3_idongz.jpg" width="40" height="40"></a></dd><dd class="comment_body">域名转发就是了啊，搞的这么麻烦</dd></dl><dl class="comment_item comment_topic" id="comment_item_6146299"><dt class="comment_head" floor="46">46楼 <span class="user"><a class="username" href="http://blog.csdn.net/android_cmos" target="_blank">android_cmos</a> <span class="ptime">2016-07-26 14:31发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6146299" username="android_cmos"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/android_cmos" target="_blank"><img src="./index_files/3_android_cmos.jpg" width="40" height="40"></a></dd><dd class="comment_body">鸿神，我照你的步骤来，第二步可以了，但是第三步的时候出现了404，这是什么情况？有人和我一样吗？</dd><dl class="comment_item comment_reply" id="comment_item_6168232"><dt class="comment_head" floor="46">Re: <span class="user"><a class="username" href="http://blog.csdn.net/android_cmos" target="_blank">android_cmos</a> <span class="ptime">2016-08-01 21:41发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6168232" username="android_cmos"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/android_cmos" target="_blank"><img src="./index_files/3_android_cmos.jpg" width="40" height="40"></a></dd><dd class="comment_body">回复android_cmos：已经做好了，是我自己有个地方没注意，谢谢！</dd></dl></dl><dl class="comment_item comment_topic" id="comment_item_6128867"><dt class="comment_head" floor="45">45楼 <span class="user"><a class="username" href="http://blog.csdn.net/qq_27464453" target="_blank">qq_27464453</a> <span class="ptime">2016-07-14 17:35发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6128867" username="qq_27464453"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/qq_27464453" target="_blank"><img src="./index_files/3_qq_27464453.jpg" width="40" height="40"></a></dd><dd class="comment_body">GitHub Pages<br> Your site is published at https://alienandroid.github.io/        但是打开还是404啊，邮箱也验证了</dd></dl><dl class="comment_item comment_topic" id="comment_item_6128724"><dt class="comment_head" floor="44">44楼 <span class="user"><a class="username" href="http://blog.csdn.net/qq_27464453" target="_blank">qq_27464453</a> <span class="ptime">2016-07-14 16:40发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6128724" username="qq_27464453"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/qq_27464453" target="_blank"><img src="./index_files/3_qq_27464453.jpg" width="40" height="40"></a></dd><dd class="comment_body">鸿神，github本地安装以及配置好了，但是在clone到本地的时候 出现错误warning: You appear to have cloned an empty repository.Checking connectivity... done. 远程仓库是空的，要怎么做呢</dd><dl class="comment_item comment_reply" id="comment_item_6145757"><dt class="comment_head" floor="44">Re: <span class="user"><a class="username" href="http://blog.csdn.net/YSC3839" target="_blank">YSC3839</a> <span class="ptime">2016-07-26 10:15发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6145757" username="YSC3839"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/YSC3839" target="_blank"><img src="./index_files/3_ysc3839.jpg" width="40" height="40"></a></dd><dd class="comment_body">回复qq_27464453：GitHub仓库页面那里有介绍如何新建仓库，照着做就行了。</dd></dl></dl><dl class="comment_item comment_topic" id="comment_item_6125563"><dt class="comment_head" floor="43">43楼 <span class="user"><a class="username" href="http://blog.csdn.net/wujxiaoz" target="_blank">wujxiaoz</a> <span class="ptime">2016-07-12 16:22发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6125563" username="wujxiaoz"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/wujxiaoz" target="_blank"><img src="./index_files/3_wujxiaoz.jpg" width="40" height="40"></a></dd><dd class="comment_body">域名+Github+CSDN，打造自己专属博客。哎哟，还不错~</dd></dl><dl class="comment_item comment_topic" id="comment_item_6079565"><dt class="comment_head" floor="42">42楼 <span class="user"><a class="username" href="http://blog.csdn.net/lijiaweiljw" target="_blank">李佳伟-jw</a> <span class="ptime">2016-06-11 15:53发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6079565" username="lijiaweiljw"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/lijiaweiljw" target="_blank"><img src="./index_files/3_lijiaweiljw.jpg" width="40" height="40"></a></dd><dd class="comment_body">哈哈真棒。</dd></dl><dl class="comment_item comment_topic" id="comment_item_6047372"><dt class="comment_head" floor="41">41楼 <span class="user"><a class="username" href="http://blog.csdn.net/hejun041" target="_blank">hejun041</a> <span class="ptime">2016-05-24 15:12发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6047372" username="hejun041"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/hejun041" target="_blank"><img src="./index_files/3_hejun041.jpg" width="40" height="40"></a></dd><dd class="comment_body">哈哈，现在是500错误</dd></dl><dl class="comment_item comment_topic" id="comment_item_6040510"><dt class="comment_head" floor="40">40楼 <span class="user"><a class="username" href="http://blog.csdn.net/qq_14967065" target="_blank">qq_14967065</a> <span class="ptime">2016-05-18 11:32发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6040510" username="qq_14967065"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/qq_14967065" target="_blank"><img src="./index_files/3_qq_14967065.jpg" width="40" height="40"></a></dd><dd class="comment_body">终于好了，github 建立个人主页 需要最少验证一个邮箱才行，否则会显示404，切记</dd></dl><dl class="comment_item comment_topic" id="comment_item_6040457"><dt class="comment_head" floor="39">39楼 <span class="user"><a class="username" href="http://blog.csdn.net/qq_14967065" target="_blank">qq_14967065</a> <span class="ptime">2016-05-18 10:46发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6040457" username="qq_14967065"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/qq_14967065" target="_blank"><img src="./index_files/3_qq_14967065.jpg" width="40" height="40"></a></dd><dd class="comment_body">我的也是404，我确定没有其它错误，在setting界面，他已经提示“Your site is ready to be published at http://username.github.io.”</dd></dl><dl class="comment_item comment_topic" id="comment_item_6040099"><dt class="comment_head" floor="38">38楼 <span class="user"><a class="username" href="http://blog.csdn.net/qq_14967065" target="_blank">qq_14967065</a> <span class="ptime">2016-05-17 16:15发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6040099" username="qq_14967065"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/qq_14967065" target="_blank"><img src="./index_files/3_qq_14967065.jpg" width="40" height="40"></a></dd><dd class="comment_body">我的也是404，求解，大神！</dd></dl><dl class="comment_item comment_topic" id="comment_item_6036046"><dt class="comment_head" floor="37">37楼 <span class="user"><a class="username" href="http://blog.csdn.net/u012655010" target="_blank">擎天__</a> <span class="ptime">2016-05-13 18:37发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6036046" username="u012655010"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/u012655010" target="_blank"><img src="./index_files/3_u012655010.jpg" width="40" height="40"></a></dd><dd class="comment_body">翔神，我只问一句，dota群号是多少？！ &lt;--__&lt;--</dd></dl><dl class="comment_item comment_topic" id="comment_item_6035729"><dt class="comment_head" floor="36">36楼 <span class="user"><a class="username" href="http://blog.csdn.net/linshijun33" target="_blank">linshijun33</a> <span class="ptime">2016-05-13 15:28发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6035729" username="linshijun33"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/linshijun33" target="_blank"><img src="./index_files/3_linshijun33.jpg" width="40" height="40"></a></dd><dd class="comment_body">跟着鸿神的脚步</dd></dl><dl class="comment_item comment_topic" id="comment_item_6034543"><dt class="comment_head" floor="35">35楼 <span class="user"><a class="username" href="http://blog.csdn.net/u012411386" target="_blank">KnightOneAdmin</a> <span class="ptime">2016-05-12 16:38发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6034543" username="u012411386"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/u012411386" target="_blank"><img src="./index_files/3_u012411386.jpg" width="40" height="40"></a></dd><dd class="comment_body">学习了，先mark一下。</dd></dl><dl class="comment_item comment_topic" id="comment_item_6034286"><dt class="comment_head" floor="34">34楼 <span class="user"><a class="username" href="http://blog.csdn.net/itmyhome" target="_blank">麦田</a> <span class="ptime">2016-05-12 14:38发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6034286" username="itmyhome"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/itmyhome" target="_blank"><img src="./index_files/3_itmyhome.jpg" width="40" height="40"></a></dd><dd class="comment_body">学习了</dd></dl><dl class="comment_item comment_topic" id="comment_item_6032749"><dt class="comment_head" floor="33">33楼 <span class="user"><a class="username" href="http://blog.csdn.net/chenxin_oo" target="_blank">yt-zhai</a> <span class="ptime">2016-05-11 12:47发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6032749" username="chenxin_oo"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/chenxin_oo" target="_blank"><img src="./index_files/3_chenxin_oo.jpg" width="40" height="40"></a></dd><dd class="comment_body">您好我想问下CNAME是什么格式的文件啊我 txt文件不行啊</dd></dl><dl class="comment_item comment_topic" id="comment_item_6031800"><dt class="comment_head" floor="32">32楼 <span class="user">[游客] <span class="ptime">2016-05-10 17:30发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6031800" username=""> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#delete" class="cmt_btn delete" title="删除">[删除]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/" target="_blank"><img src="./index_files/3_guest.jpg" width="40" height="40"></a></dd><dd class="comment_body">好的，谢谢你</dd></dl><dl class="comment_item comment_topic" id="comment_item_6029540"><dt class="comment_head" floor="31">31楼 <span class="user"><a class="username" href="http://blog.csdn.net/mystapler" target="_blank">mystapler</a> <span class="ptime">2016-05-09 10:20发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6029540" username="mystapler"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/mystapler" target="_blank"><img src="./index_files/3_mystapler.jpg" width="40" height="40"></a></dd><dd class="comment_body">稳稳的把自己的域名 导向了鸿洋大神 ~(￣0￣)/</dd></dl><dl class="comment_item comment_topic" id="comment_item_6029205"><dt class="comment_head" floor="30">30楼 <span class="user"><a class="username" href="http://blog.csdn.net/u010887744" target="_blank">Z小繁</a> <span class="ptime">2016-05-08 22:09发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6029205" username="u010887744"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/u010887744" target="_blank"><img src="./index_files/3_u010887744.jpg" width="40" height="40"></a></dd><dd class="comment_body">先mark一下，我自己是买的服务器，这个还是很有用的</dd></dl><dl class="comment_item comment_topic" id="comment_item_6028470"><dt class="comment_head" floor="29">29楼 <span class="user"><a class="username" href="http://blog.csdn.net/mynamelijun" target="_blank">博物君子</a> <span class="ptime">2016-05-07 22:48发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6028470" username="mynamelijun"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/mynamelijun" target="_blank"><img src="./index_files/3_mynamelijun.jpg" width="40" height="40"></a></dd><dd class="comment_body">我提交的时候输入账号和密码的时候，密码那个输入没反应，最后提示<br>remote:invalid  username or password.<br>fatal: authentication failed for 'https://github.com/namelijun/namelijun.githun.io.git/'</dd></dl><dl class="comment_item comment_topic" id="comment_item_6026629"><dt class="comment_head" floor="28">28楼 <span class="user"><a class="username" href="http://blog.csdn.net/Sean_css" target="_blank">Sean_css</a> <span class="ptime">2016-05-06 13:24发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6026629" username="Sean_css"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/Sean_css" target="_blank"><img src="./index_files/3_sean_css.jpg" width="40" height="40"></a></dd><dd class="comment_body">多谢红羊大神，去你的github上看你头像，决定叫你红羊大神了，哈哈。上次看郭神弄好就去9块钱买了个域名，但是自己不会弄，昨天看了你的博客。十分钟搞定，感谢！</dd></dl><dl class="comment_item comment_topic" id="comment_item_6026440"><dt class="comment_head" floor="27">27楼 <span class="user"><a class="username" href="http://blog.csdn.net/liaoinstan" target="_blank">liaoinstan</a> <span class="ptime">2016-05-06 11:14发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6026440" username="liaoinstan"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/liaoinstan" target="_blank"><img src="./index_files/3_liaoinstan.jpg" width="40" height="40"></a></dd><dd class="comment_body">按照博主的步骤，花了45大洋买了个域名，搭建成功：<br>www.liaoinstan.com</dd></dl><dl class="comment_item comment_topic" id="comment_item_6026283"><dt class="comment_head" floor="26">26楼 <span class="user"><a class="username" href="http://blog.csdn.net/TokgoLiang" target="_blank">TokgoLiang</a> <span class="ptime">2016-05-06 10:06发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6026283" username="TokgoLiang"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/TokgoLiang" target="_blank"><img src="./index_files/3_tokgoliang.jpg" width="40" height="40"></a></dd><dd class="comment_body">大神，我们有没有可能实现，类似开发者选择里面——GPU呈现模式，那样的效果，就是在屏幕上面显示一些柱状图，但是又不影响下面应用Activity的点击。</dd></dl><dl class="comment_item comment_topic" id="comment_item_6026021"><dt class="comment_head" floor="25">25楼 <span class="user"><a class="username" href="http://blog.csdn.net/u010811143" target="_blank">图图的耳朵真的会动</a> <span class="ptime">2016-05-05 23:03发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6026021" username="u010811143"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/u010811143" target="_blank"><img src="./index_files/3_u010811143.jpg" width="40" height="40"></a></dd><dd class="comment_body">这是要转前端的节奏吗</dd></dl><dl class="comment_item comment_topic" id="comment_item_6025810"><dt class="comment_head" floor="24">24楼 <span class="user"><a class="username" href="http://blog.csdn.net/Kinsity" target="_blank">devzjc</a> <span class="ptime">2016-05-05 20:49发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6025810" username="Kinsity"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/Kinsity" target="_blank"><img src="./index_files/3_kinsity.jpg" width="40" height="40"></a></dd><dd class="comment_body">请教前辈两个问题：<br>1、github上创建Repository时，为什么一定用”你的用名.github.io“格式,且得到的访问地址只能是http://,不能是www 格式。这是和github访问机制的有关吗？<br>2、在csdn pc端网址和手机端网址是怎样转换的<br>  我按照您的格式转换，手机端网址都自动跳转到这个地址：http://m.blog.csdn.net/home/index</dd></dl><dl class="comment_item comment_topic" id="comment_item_6025460"><dt class="comment_head" floor="23">23楼 <span class="user"><a class="username" href="http://blog.csdn.net/lu62lei" target="_blank">青春在沙场</a> <span class="ptime">2016-05-05 17:40发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6025460" username="lu62lei"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/lu62lei" target="_blank"><img src="./index_files/3_lu62lei.jpg" width="40" height="40"></a></dd><dd class="comment_body">仓库克隆到本地，创建index更新成功，浏览器进入直接404，求解？</dd><dl class="comment_item comment_reply" id="comment_item_6025803"><dt class="comment_head" floor="23">Re: <span class="user"><a class="username" href="http://blog.csdn.net/Kinsity" target="_blank">devzjc</a> <span class="ptime">2016-05-05 20:47发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6025803" username="Kinsity"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/Kinsity" target="_blank"><img src="./index_files/3_kinsity.jpg" width="40" height="40"></a></dd><dd class="comment_body">回复lu62lei：是不是忘了git push这一步了</dd><dl class="comment_item comment_reply" id="comment_item_6026202"><dt class="comment_head" floor="1">Re: <span class="user"><a class="username" href="http://blog.csdn.net/lu62lei" target="_blank">青春在沙场</a> <span class="ptime">2016-05-06 09:10发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6026202" username="lu62lei"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/lu62lei" target="_blank"><img src="./index_files/3_lu62lei.jpg" width="40" height="40"></a></dd><dd class="comment_body">回复Kinsity：已经更新成功了啊</dd></dl></dl><dl class="comment_item comment_reply" id="comment_item_6025490"><dt class="comment_head" floor="23">Re: <span class="user"><a class="username" href="http://blog.csdn.net/lmj623565791" target="_blank">鸿洋_</a> <span class="ptime">2016-05-05 17:52发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6025490" username="lmj623565791"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/lmj623565791" target="_blank"><img src="./index_files/3_lmj623565791.jpg" width="40" height="40"></a></dd><dd class="comment_body">回复lu62lei：仔细看下，index.html如果提交成功，则可通过http://用户名.github.io/访问。</dd><dl class="comment_item comment_reply" id="comment_item_6025525"><dt class="comment_head" floor="2">Re: <span class="user"><a class="username" href="http://blog.csdn.net/lu62lei" target="_blank">青春在沙场</a> <span class="ptime">2016-05-05 18:09发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6025525" username="lu62lei"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/lu62lei" target="_blank"><img src="./index_files/3_lu62lei.jpg" width="40" height="40"></a></dd><dd class="comment_body">回复lmj623565791：仓库名和用户名都试过了，依然是404，博主求解</dd></dl><dl class="comment_item comment_reply" id="comment_item_6025520"><dt class="comment_head" floor="2">Re: <span class="user"><a class="username" href="http://blog.csdn.net/lu62lei" target="_blank">青春在沙场</a> <span class="ptime">2016-05-05 18:04发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6025520" username="lu62lei"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/lu62lei" target="_blank"><img src="./index_files/3_lu62lei.jpg" width="40" height="40"></a></dd><dd class="comment_body">回复lmj623565791：确定都提交成功了，在github上都可以看到，没错。但是用户名是指仓库名还是github帐户名？</dd><dl class="comment_item comment_reply" id="comment_item_6070795"><dt class="comment_head" floor="2">Re: <span class="user"><a class="username" href="http://blog.csdn.net/hwh090909" target="_blank">hwh090909</a> <span class="ptime">2016-06-01 17:31发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6070795" username="hwh090909"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/hwh090909" target="_blank"><img src="./index_files/3_hwh090909.jpg" width="40" height="40"></a></dd><dd class="comment_body">回复lu62lei：仓库名和用户名要一样,比如你的github用户名是XXXXX,那么你的创建的仓库名应该是XXXXX.github.io</dd></dl><dl class="comment_item comment_reply" id="comment_item_6025571"><dt class="comment_head" floor="2">Re: <span class="user"><a class="username" href="http://blog.csdn.net/lmj623565791" target="_blank">鸿洋_</a> <span class="ptime">2016-05-05 18:41发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6025571" username="lmj623565791"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/lmj623565791" target="_blank"><img src="./index_files/3_lmj623565791.jpg" width="40" height="40"></a></dd><dd class="comment_body">回复lu62lei：github账户的名字，如果还没成功，给我发下你的仓库地址。</dd><dl class="comment_item comment_reply" id="comment_item_6040513" style="margin-left:0;"><dt class="comment_head" floor="2">Re: <span class="user"><a class="username" href="http://blog.csdn.net/qq_14967065" target="_blank">qq_14967065</a> <span class="ptime">2016-05-18 11:33发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6040513" username="qq_14967065"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/qq_14967065" target="_blank"><img src="./index_files/3_qq_14967065.jpg" width="40" height="40"></a></dd><dd class="comment_body">终于好了，github 建立个人主页 需要最少验证一个邮箱才行，否则会显示404，切记</dd></dl><dl class="comment_item comment_reply" id="comment_item_6040507" style="margin-left:0;"><dt class="comment_head" floor="2">Re: <span class="user"><a class="username" href="http://blog.csdn.net/qq_14967065" target="_blank">qq_14967065</a> <span class="ptime">2016-05-18 11:32发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6040507" username="qq_14967065"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/qq_14967065" target="_blank"><img src="./index_files/3_qq_14967065.jpg" width="40" height="40"></a></dd><dd class="comment_body">终于好了，github 建立个人主页 需要最少验证一个邮箱才行，否则会显示404，切记</dd></dl><dl class="comment_item comment_reply" id="comment_item_6040112" style="margin-left:0;"><dt class="comment_head" floor="2">Re: <span class="user"><a class="username" href="http://blog.csdn.net/qq_14967065" target="_blank">qq_14967065</a> <span class="ptime">2016-05-17 16:20发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6040112" username="qq_14967065"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/qq_14967065" target="_blank"><img src="./index_files/3_qq_14967065.jpg" width="40" height="40"></a></dd><dd class="comment_body">我的也是404</dd></dl><dl class="comment_item comment_reply" id="comment_item_6040098" style="margin-left:0;"><dt class="comment_head" floor="2">Re: <span class="user"><a class="username" href="http://blog.csdn.net/qq_14967065" target="_blank">qq_14967065</a> <span class="ptime">2016-05-17 16:14发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6040098" username="qq_14967065"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/qq_14967065" target="_blank"><img src="./index_files/3_qq_14967065.jpg" width="40" height="40"></a></dd><dd class="comment_body">我的也是404啊，求解啊，大神</dd></dl><dl class="comment_item comment_reply" id="comment_item_6026206" style="margin-left:0;"><dt class="comment_head" floor="2">Re: <span class="user"><a class="username" href="http://blog.csdn.net/lu62lei" target="_blank">青春在沙场</a> <span class="ptime">2016-05-06 09:12发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6026206" username="lu62lei"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/lu62lei" target="_blank"><img src="./index_files/3_lu62lei.jpg" width="40" height="40"></a></dd><dd class="comment_body">回复lmj623565791：https://github.com/codingWhenever/anythingAndroid.github.io</dd><dl class="comment_item comment_reply" id="comment_item_6035026" style="margin-left:0;"><dt class="comment_head" floor="5">Re: <span class="user"><a class="username" href="http://blog.csdn.net/zbao6062" target="_blank">Reag0n</a> <span class="ptime">2016-05-12 22:47发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6035026" username="zbao6062"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/zbao6062" target="_blank"><img src="./index_files/3_zbao6062.jpg" width="40" height="40"></a></dd><dd class="comment_body">回复lu62lei：跟你一样的问题，404</dd><dl class="comment_item comment_reply" id="comment_item_6070796" style="margin-left:0;"><dt class="comment_head" floor="1">Re: <span class="user"><a class="username" href="http://blog.csdn.net/hwh090909" target="_blank">hwh090909</a> <span class="ptime">2016-06-01 17:31发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6070796" username="hwh090909"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/hwh090909" target="_blank"><img src="./index_files/3_hwh090909.jpg" width="40" height="40"></a></dd><dd class="comment_body">回复zbao6062：仓库名和用户名要一样,比如你的github用户名是XXXXX,那么你的创建的仓库名应该是XXXXX.github.io</dd></dl></dl></dl></dl></dl></dl></dl><dl class="comment_item comment_topic" id="comment_item_6025096"><dt class="comment_head" floor="22">22楼 <span class="user"><a class="username" href="http://blog.csdn.net/ljd2038" target="_blank">无嘴小呆子</a> <span class="ptime">2016-05-05 15:15发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6025096" username="ljd2038"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/ljd2038" target="_blank"><img src="./index_files/3_ljd2038.jpg" width="40" height="40"></a></dd><dd class="comment_body">果断买了一个域名，按照步骤来实现，成功连接到自己博客地址，非常感谢。</dd></dl><dl class="comment_item comment_topic" id="comment_item_6024813"><dt class="comment_head" floor="21">21楼 <span class="user"><a class="username" href="http://blog.csdn.net/yang199714" target="_blank">aiyuan1314丶</a> <span class="ptime">2016-05-05 12:46发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024813" username="yang199714"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/yang199714" target="_blank"><img src="./index_files/3_yang199714.jpg" width="40" height="40"></a></dd><dd class="comment_body">mrrobot97.me</dd></dl><dl class="comment_item comment_topic" id="comment_item_6024798"><dt class="comment_head" floor="20">20楼 <span class="user"><a class="username" href="http://blog.csdn.net/Ivy_do" target="_blank">Ivy_do</a> <span class="ptime">2016-05-05 12:33发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024798" username="Ivy_do"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/Ivy_do" target="_blank"><img src="./index_files/3_ivy_do.jpg" width="40" height="40"></a></dd><dd class="comment_body">鸿洋大神，你提供的QQ交流群，加不进去啊。（加463081660，提示群满，让加514447580（5群），然后群满，又让加284327959（7群），但是7群也是满的，但又没提供下一个可加群的信息。。。</dd><dl class="comment_item comment_reply" id="comment_item_6025167"><dt class="comment_head" floor="20">Re: <span class="user"><a class="username" href="http://blog.csdn.net/lmj623565791" target="_blank">鸿洋_</a> <span class="ptime">2016-05-05 15:52发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6025167" username="lmj623565791"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/lmj623565791" target="_blank"><img src="./index_files/3_lmj623565791.jpg" width="40" height="40"></a></dd><dd class="comment_body">回复Ivy_do：不好意思哈，群号：535687182</dd><dl class="comment_item comment_reply" id="comment_item_6400450"><dt class="comment_head" floor="1">Re: <span class="user"><a class="username" href="http://blog.csdn.net/qq_29061341" target="_blank">Struggle_1</a> <span class="ptime">2016-11-09 15:09发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6400450" username="qq_29061341"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/qq_29061341" target="_blank"><img src="./index_files/3_qq_29061341.jpg" width="40" height="40"></a></dd><dd class="comment_body">[reply]lmj623565现在这个群也加不上了、、、  能在提供个交流群吗 鸿洋大神</dd></dl></dl></dl><dl class="comment_item comment_topic" id="comment_item_6024743"><dt class="comment_head" floor="19">19楼 <span class="user"><a class="username" href="http://blog.csdn.net/jiangwei_jjjjjm" target="_blank">jiangwei_jjjjjm</a> <span class="ptime">2016-05-05 11:47发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024743" username="jiangwei_jjjjjm"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/jiangwei_jjjjjm" target="_blank"><img src="./index_files/3_jiangwei_jjjjjm.jpg" width="40" height="40"></a></dd><dd class="comment_body">nice</dd></dl><dl class="comment_item comment_topic" id="comment_item_6024727"><dt class="comment_head" floor="18">18楼 <span class="user"><a class="username" href="http://blog.csdn.net/H_Zhang" target="_blank">codeZhangHao</a> <span class="ptime">2016-05-05 11:41发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024727" username="H_Zhang"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/H_Zhang" target="_blank"><img src="./index_files/3_h_zhang.jpg" width="40" height="40"></a></dd><dd class="comment_body">mark</dd></dl><dl class="comment_item comment_topic" id="comment_item_6024669"><dt class="comment_head" floor="17">17楼 <span class="user"><a class="username" href="http://blog.csdn.net/diyangxia" target="_blank">diyangxia</a> <span class="ptime">2016-05-05 11:19发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024669" username="diyangxia"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/diyangxia" target="_blank"><img src="./index_files/3_diyangxia.jpg" width="40" height="40"></a></dd><dd class="comment_body">打造博客专属域名成功！</dd></dl><dl class="comment_item comment_topic" id="comment_item_6024523"><dt class="comment_head" floor="16">16楼 <span class="user"><a class="username" href="http://blog.csdn.net/lxk_1993" target="_blank">lxk_1993</a> <span class="ptime">2016-05-05 10:22发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024523" username="lxk_1993"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/lxk_1993" target="_blank"><img src="./index_files/3_lxk_1993.jpg" width="40" height="40"></a></dd><dd class="comment_body">不懂使用 git 的 可以 参考 这里  http://blog.csdn.net/lxk_1993/article/details/50441442</dd></dl><dl class="comment_item comment_topic" id="comment_item_6024501"><dt class="comment_head" floor="15">15楼 <span class="user"><a class="username" href="http://blog.csdn.net/leafact" target="_blank">Leafact</a> <span class="ptime">2016-05-05 10:05发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024501" username="leafact"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/leafact" target="_blank"><img src="./index_files/3_leafact.jpg" width="40" height="40"></a></dd><dd class="comment_body">关于万网的管理控制台中解析情况：域名DNS未修改 ，这步操作没有指导如何操作</dd><dl class="comment_item comment_reply" id="comment_item_6024586"><dt class="comment_head" floor="15">Re: <span class="user"><a class="username" href="http://blog.csdn.net/leafact" target="_blank">Leafact</a> <span class="ptime">2016-05-05 10:39发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024586" username="leafact"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/leafact" target="_blank"><img src="./index_files/3_leafact.jpg" width="40" height="40"></a></dd><dd class="comment_body">回复leafact：原来需要购买以下才行，另外。上传到github上面的CNAME如果为www.zhanghongyang.com的话，浏览器访问zhanghongyang.com会显示404，只有www.zhanghongyang.com 会跳转到博客</dd><dl class="comment_item comment_reply" id="comment_item_6026237"><dt class="comment_head" floor="1">Re: <span class="user"><a class="username" href="http://blog.csdn.net/Kinsity" target="_blank">devzjc</a> <span class="ptime">2016-05-06 09:39发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6026237" username="Kinsity"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/Kinsity" target="_blank"><img src="./index_files/3_kinsity.jpg" width="40" height="40"></a></dd><dd class="comment_body">回复leafact：你检查下万网增加了@解析么？</dd><dl class="comment_item comment_reply" id="comment_item_6028607"><dt class="comment_head" floor="1">Re: <span class="user"><a class="username" href="http://blog.csdn.net/leafact" target="_blank">Leafact</a> <span class="ptime">2016-05-08 09:59发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6028607" username="leafact"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/leafact" target="_blank"><img src="./index_files/3_leafact.jpg" width="40" height="40"></a></dd><dd class="comment_body">回复Kinsity：增加了呢，不过我确实遇到这个问题，而且把CNAME不加www就可以了=。=</dd><dl class="comment_item comment_reply" id="comment_item_6029389" style="margin-left:0;"><dt class="comment_head" floor="1">Re: <span class="user"><a class="username" href="http://blog.csdn.net/Kinsity" target="_blank">devzjc</a> <span class="ptime">2016-05-09 09:16发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6029389" username="Kinsity"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/Kinsity" target="_blank"><img src="./index_files/3_kinsity.jpg" width="40" height="40"></a></dd><dd class="comment_body">回复leafact：我在CNAME上增加了两个解析，www和@形式的网址，结果都可以访问。建议重新做一遍，看错在哪里</dd></dl></dl></dl><dl class="comment_item comment_reply" id="comment_item_6024633"><dt class="comment_head" floor="1">Re: <span class="user"><a class="username" href="http://blog.csdn.net/leafact" target="_blank">Leafact</a> <span class="ptime">2016-05-05 11:04发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024633" username="leafact"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/leafact" target="_blank"><img src="./index_files/3_leafact.jpg" width="40" height="40"></a></dd><dd class="comment_body">回复leafact：我研究了一下，我发现博主你的上传到github上的CNAME应该上传为zhanghongyang.com，否则出现的问题如上条回复所述，不知道你觉得我说的有没有道理=。=</dd></dl></dl></dl><dl class="comment_item comment_topic" id="comment_item_6024494"><dt class="comment_head" floor="14">14楼 <span class="user"><a class="username" href="http://blog.csdn.net/z53699170" target="_blank">z53699170</a> <span class="ptime">2016-05-05 10:02发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024494" username="z53699170"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/z53699170" target="_blank"><img src="./index_files/3_z53699170.jpg" width="40" height="40"></a></dd><dd class="comment_body">学习，感谢大神</dd></dl><dl class="comment_item comment_topic" id="comment_item_6024447"><dt class="comment_head" floor="13">13楼 <span class="user"><a class="username" href="http://blog.csdn.net/u010331406" target="_blank">追风917</a> <span class="ptime">2016-05-05 09:44发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024447" username="u010331406"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/u010331406" target="_blank"><img src="./index_files/3_u010331406.jpg" width="40" height="40"></a></dd><dd class="comment_body">要顶，顶顶更健康</dd></dl><dl class="comment_item comment_topic" id="comment_item_6024442"><dt class="comment_head" floor="12">12楼 <span class="user"><a class="username" href="http://blog.csdn.net/u012970471" target="_blank">风卷云飞会天黑</a> <span class="ptime">2016-05-05 09:43发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024442" username="u012970471"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/u012970471" target="_blank"><img src="./index_files/3_u012970471.jpg" width="40" height="40"></a></dd><dd class="comment_body">我就问我是不是前排</dd></dl><dl class="comment_item comment_topic" id="comment_item_6024441"><dt class="comment_head" floor="11">11楼 <span class="user"><a class="username" href="http://blog.csdn.net/dragon539" target="_blank">dragon539</a> <span class="ptime">2016-05-05 09:43发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024441" username="dragon539"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/dragon539" target="_blank"><img src="./index_files/3_dragon539.jpg" width="40" height="40"></a></dd><dd class="comment_body">给力!!!</dd></dl><dl class="comment_item comment_topic" id="comment_item_6024428"><dt class="comment_head" floor="10">10楼 <span class="user"><a class="username" href="http://blog.csdn.net/AnalyzeSystem" target="_blank">AnalyzeSystem</a> <span class="ptime">2016-05-05 09:37发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024428" username="AnalyzeSystem"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/AnalyzeSystem" target="_blank"><img src="./index_files/3_analyzesystem.jpg" width="40" height="40"></a></dd><dd class="comment_body">还以为翔有了老婆忘了我们，这速度！！</dd></dl><dl class="comment_item comment_topic" id="comment_item_6024420"><dt class="comment_head" floor="9">9楼 <span class="user"><a class="username" href="http://blog.csdn.net/lu62lei" target="_blank">青春在沙场</a> <span class="ptime">2016-05-05 09:37发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024420" username="lu62lei"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/lu62lei" target="_blank"><img src="./index_files/3_lu62lei.jpg" width="40" height="40"></a></dd><dd class="comment_body">先占座再看文，你懂的</dd></dl><dl class="comment_item comment_topic" id="comment_item_6024418"><dt class="comment_head" floor="8">8楼 <span class="user"><a class="username" href="http://blog.csdn.net/u014039918" target="_blank">卡布达Style</a> <span class="ptime">2016-05-05 09:36发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024418" username="u014039918"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/u014039918" target="_blank"><img src="./index_files/3_u014039918.jpg" width="40" height="40"></a></dd><dd class="comment_body">前来混个脸熟，码一下</dd></dl><dl class="comment_item comment_topic" id="comment_item_6024390"><dt class="comment_head" floor="7">7楼 <span class="user"><a class="username" href="http://blog.csdn.net/u013792369" target="_blank">琴声悠扬TODO</a> <span class="ptime">2016-05-05 09:20发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024390" username="u013792369"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/u013792369" target="_blank"><img src="./index_files/3_u013792369.jpg" width="40" height="40"></a></dd><dd class="comment_body">当我访问zhangHongyang.com时候，我就知道是阿里的域名解析，第一次很慢，</dd><dl class="comment_item comment_reply" id="comment_item_6024394"><dt class="comment_head" floor="7">Re: <span class="user"><a class="username" href="http://blog.csdn.net/u013792369" target="_blank">琴声悠扬TODO</a> <span class="ptime">2016-05-05 09:21发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024394" username="u013792369"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/u013792369" target="_blank"><img src="./index_files/3_u013792369.jpg" width="40" height="40"></a></dd><dd class="comment_body">回复u013792369：微信里面登录CSDN回复有问题啊，我才这一次，就评论了这么多，，不是故意的</dd></dl></dl><dl class="comment_item comment_topic" id="comment_item_6024389"><dt class="comment_head" floor="6">6楼 <span class="user"><a class="username" href="http://blog.csdn.net/u013792369" target="_blank">琴声悠扬TODO</a> <span class="ptime">2016-05-05 09:20发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024389" username="u013792369"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/u013792369" target="_blank"><img src="./index_files/3_u013792369.jpg" width="40" height="40"></a></dd><dd class="comment_body">当我访问zhangHongyang.com时候，我就知道是阿里的域名解析，第一次很慢，</dd></dl><dl class="comment_item comment_topic" id="comment_item_6024388"><dt class="comment_head" floor="5">5楼 <span class="user"><a class="username" href="http://blog.csdn.net/u013792369" target="_blank">琴声悠扬TODO</a> <span class="ptime">2016-05-05 09:19发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024388" username="u013792369"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/u013792369" target="_blank"><img src="./index_files/3_u013792369.jpg" width="40" height="40"></a></dd><dd class="comment_body">当我访问zhangHongyang.com时候，我就知道是阿里的域名解析，第一次很慢，</dd></dl><dl class="comment_item comment_topic" id="comment_item_6024387"><dt class="comment_head" floor="4">4楼 <span class="user"><a class="username" href="http://blog.csdn.net/u013792369" target="_blank">琴声悠扬TODO</a> <span class="ptime">2016-05-05 09:19发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024387" username="u013792369"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/u013792369" target="_blank"><img src="./index_files/3_u013792369.jpg" width="40" height="40"></a></dd><dd class="comment_body">当我访问zhangHongyang.com时候，我就知道是阿里的域名解析，第一次很慢，</dd></dl><dl class="comment_item comment_topic" id="comment_item_6024375"><dt class="comment_head" floor="3">3楼 <span class="user"><a class="username" href="http://blog.csdn.net/TokgoLiang" target="_blank">TokgoLiang</a> <span class="ptime">2016-05-05 09:13发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024375" username="TokgoLiang"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/TokgoLiang" target="_blank"><img src="./index_files/3_tokgoliang.jpg" width="40" height="40"></a></dd><dd class="comment_body">前排混个熟练，先回复后阅读</dd></dl><dl class="comment_item comment_topic" id="comment_item_6024366"><dt class="comment_head" floor="2">2楼 <span class="user"><a class="username" href="http://blog.csdn.net/u012987272" target="_blank">William_Guan丶Five</a> <span class="ptime">2016-05-05 09:06发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024366" username="u012987272"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/u012987272" target="_blank"><img src="./index_files/3_u012987272.jpg" width="40" height="40"></a></dd><dd class="comment_body">Hexo入门文章<br>http://wsgzao.github.io/post/hexo-guide/</dd></dl><dl class="comment_item comment_topic" id="comment_item_6024360"><dt class="comment_head" floor="1">1楼 <span class="user"><a class="username" href="http://blog.csdn.net/z754519420" target="_blank">听调频的大叔</a> <span class="ptime">2016-05-05 08:56发表</span>  <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="6024360" username="z754519420"> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="http://blog.csdn.net/lmj623565791/article/details/51319147#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="http://blog.csdn.net/z754519420" target="_blank"><img src="./index_files/3_z754519420.jpg" width="40" height="40"></a></dd><dd class="comment_body">前排。一步步照着做一遍</dd></dl><div class="clear"></div></div>
+    <div id="comment_bar" style="display: none;">
+    </div>
+    <div id="comment_form"><div class="guest_link">您还没有登录,请<a href="javascript:void(0);" onclick="javascript:loginbox();">[登录]</a>或<a href="http://passport.csdn.net/account/register?from=http%3A%2F%2Fblog.csdn.net%2Flmj623565791%2Farticle%2Fdetails%2F51319147">[注册]</a></div></div>
+    <div class="announce">
+        * 以上用户言论只代表其个人观点，不代表CSDN网站的观点或立场<a name="reply"></a><a name="quote"></a></div>
+</div>
+
+<script type="text/javascript">
+    var fileName = '51319147';
+    var commentscount = 77;
+    var islock = false
+</script>
+<script type="text/javascript" src="./index_files/comment.js"></script>
+    <div id="ad_bot">
+    </div>
+<div id="report_dialog">
+</div>
+
+<div id="d-top" style="bottom:60px;">
+        <a id="quick-reply" class="btn btn-top q-reply" title="快速回复" style="display:none;">
+            <img src="./index_files/blog-icon-reply.png" alt="快速回复">
+        </a>    
+
+    <a id="d-top-a" class="btn btn-top backtop" style="display: none;" title="返回顶部" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_huidaodingbu&#39;])">         
+         <img src="./index_files/top.png" alt="TOP">
+    </a>
+</div>
+<script type="text/javascript">
+    $(function ()
+    {
+        $("#ad_frm_0").height("90px");
+        
+        setTimeout(function(){
+            $("#ad_frm_2").height("200px");
+        },1000);    
+    });
+  
+</script>
+<style type="text/css">
+    .tag_list
+    {
+        background: none repeat scroll 0 0 #FFFFFF;
+        border: 1px solid #D7CBC1;
+        color: #000000;
+        font-size: 12px;
+        line-height: 20px;
+        list-style: none outside none;
+        margin: 10px 2% 0 1%;
+        padding: 1px;
+    }
+    .tag_list h5
+    {
+        background: none repeat scroll 0 0 #E0DBD3;
+        color: #47381C;
+        font-size: 12px;
+        height: 24px;
+        line-height: 24px;
+        padding: 0 5px;
+        margin: 0;
+    }
+    .tag_list h5 a
+    {
+        color: #47381C;
+    }
+    .classify
+    {
+        margin: 10px 0;
+        padding: 4px 12px 8px;
+    }
+    .classify a
+    {
+        margin-right: 20px;
+        white-space: nowrap;
+    }
+</style>
+
+
+<div class="tag_list" style="">
+
+    <h5>
+        <a href="http://www.csdn.net/tag/" target="_blank">核心技术类目</a></h5>
+    <div class="classify">
+<a title="全部主题" href="http://www.csdn.net/tag" target="_blank" onclick="LogClickCount(this,336);">全部主题</a>
+<a title="Hadoop" href="http://g.csdn.net/5272865" target="_blank" onclick="LogClickCount(this,336);">Hadoop</a>
+<a title="AWS" href="http://g.csdn.net/5272866" target="_blank" onclick="LogClickCount(this,336);">AWS</a>
+<a title="移动游戏" href="http://g.csdn.net/5272870" target="_blank" onclick="LogClickCount(this,336);">移动游戏</a>
+<a title="Java" href="http://g.csdn.net/5272871" target="_blank" onclick="LogClickCount(this,336);">Java</a>
+<a title="Android" href="http://g.csdn.net/5272872" target="_blank" onclick="LogClickCount(this,336);">Android</a>
+<a title="iOS" href="http://g.csdn.net/5272873" target="_blank" onclick="LogClickCount(this,336);">iOS</a>
+<a title="Swift" href="http://g.csdn.net/5272868" target="_blank" onclick="LogClickCount(this,336);">Swift</a>
+<a title="智能硬件" href="http://g.csdn.net/5272869" target="_blank" onclick="LogClickCount(this,336);">智能硬件</a>
+<a title="Docker" href="http://g.csdn.net/5272867" target="_blank" onclick="LogClickCount(this,336);">Docker</a>
+<a title="OpenStack" href="http://g.csdn.net/5272925" target="_blank" onclick="LogClickCount(this,336);">OpenStack</a>
+<a title="VPN" href="http://www.csdn.net/tag/vpn" target="_blank" onclick="LogClickCount(this,336);">VPN</a>
+<a title="Spark" href="http://g.csdn.net/5272924" target="_blank" onclick="LogClickCount(this,336);">Spark</a>
+<a title="ERP" href="http://www.csdn.net/tag/erp" target="_blank" onclick="LogClickCount(this,336);">ERP</a>
+<a title="IE10" href="http://www.csdn.net/tag/ie10" target="_blank" onclick="LogClickCount(this,336);">IE10</a>
+<a title="Eclipse" href="http://www.csdn.net/tag/eclipse" target="_blank" onclick="LogClickCount(this,336);">Eclipse</a>
+<a title="CRM" href="http://www.csdn.net/tag/crm" target="_blank" onclick="LogClickCount(this,336);">CRM</a>
+<a title="JavaScript" href="http://www.csdn.net/tag/javascript" target="_blank" onclick="LogClickCount(this,336);">JavaScript</a>
+<a title="数据库" href="http://www.csdn.net/tag/%E6%95%B0%E6%8D%AE%E5%BA%93" target="_blank" onclick="LogClickCount(this,336);">数据库</a>
+<a title="Ubuntu" href="http://www.csdn.net/tag/ubuntu" target="_blank" onclick="LogClickCount(this,336);">Ubuntu</a>
+<a title="NFC" href="http://www.csdn.net/tag/nfc" target="_blank" onclick="LogClickCount(this,336);">NFC</a>
+<a title="WAP" href="http://www.csdn.net/tag/wap" target="_blank" onclick="LogClickCount(this,336);">WAP</a>
+<a title="jQuery" href="http://www.csdn.net/tag/jquery" target="_blank" onclick="LogClickCount(this,336);">jQuery</a>
+<a title="BI" href="http://www.csdn.net/tag/bi" target="_blank" onclick="LogClickCount(this,336);">BI</a>
+<a title="HTML5" href="http://www.csdn.net/tag/html5" target="_blank" onclick="LogClickCount(this,336);">HTML5</a>
+<a title="Spring" href="http://www.csdn.net/tag/spring" target="_blank" onclick="LogClickCount(this,336);">Spring</a>
+<a title="Apache" href="http://www.csdn.net/tag/apache" target="_blank" onclick="LogClickCount(this,336);">Apache</a>
+<a title=".NET" href="http://www.csdn.net/tag/.net" target="_blank" onclick="LogClickCount(this,336);">.NET</a>
+<a title="API" href="http://www.csdn.net/tag/api" target="_blank" onclick="LogClickCount(this,336);">API</a>
+<a title="HTML" href="http://www.csdn.net/tag/html" target="_blank" onclick="LogClickCount(this,336);">HTML</a>
+<a title="SDK" href="http://www.csdn.net/tag/sdk" target="_blank" onclick="LogClickCount(this,336);">SDK</a>
+<a title="IIS" href="http://www.csdn.net/tag/iis" target="_blank" onclick="LogClickCount(this,336);">IIS</a>
+<a title="Fedora" href="http://www.csdn.net/tag/fedora" target="_blank" onclick="LogClickCount(this,336);">Fedora</a>
+<a title="XML" href="http://www.csdn.net/tag/xml" target="_blank" onclick="LogClickCount(this,336);">XML</a>
+<a title="LBS" href="http://www.csdn.net/tag/lbs" target="_blank" onclick="LogClickCount(this,336);">LBS</a>
+<a title="Unity" href="http://www.csdn.net/tag/unity" target="_blank" onclick="LogClickCount(this,336);">Unity</a>
+<a title="Splashtop" href="http://www.csdn.net/tag/splashtop" target="_blank" onclick="LogClickCount(this,336);">Splashtop</a>
+<a title="UML" href="http://www.csdn.net/tag/uml" target="_blank" onclick="LogClickCount(this,336);">UML</a>
+<a title="components" href="http://www.csdn.net/tag/components" target="_blank" onclick="LogClickCount(this,336);">components</a>
+<a title="Windows Mobile" href="http://www.csdn.net/tag/windowsmobile" target="_blank" onclick="LogClickCount(this,336);">Windows Mobile</a>
+<a title="Rails" href="http://www.csdn.net/tag/rails" target="_blank" onclick="LogClickCount(this,336);">Rails</a>
+<a title="QEMU" href="http://www.csdn.net/tag/qemu" target="_blank" onclick="LogClickCount(this,336);">QEMU</a>
+<a title="KDE" href="http://www.csdn.net/tag/kde" target="_blank" onclick="LogClickCount(this,336);">KDE</a>
+<a title="Cassandra" href="http://www.csdn.net/tag/cassandra" target="_blank" onclick="LogClickCount(this,336);">Cassandra</a>
+<a title="CloudStack" href="http://www.csdn.net/tag/cloudstack" target="_blank" onclick="LogClickCount(this,336);">CloudStack</a>
+<a title="FTC" href="http://www.csdn.net/tag/ftc" target="_blank" onclick="LogClickCount(this,336);">FTC</a>
+<a title="coremail" href="http://www.csdn.net/tag/coremail" target="_blank" onclick="LogClickCount(this,336);">coremail</a>
+<a title="OPhone " href="http://www.csdn.net/tag/ophone" target="_blank" onclick="LogClickCount(this,336);">OPhone </a>
+<a title="CouchBase" href="http://www.csdn.net/tag/couchbase" target="_blank" onclick="LogClickCount(this,336);">CouchBase</a>
+<a title="云计算" href="http://www.csdn.net/tag/%E4%BA%91%E8%AE%A1%E7%AE%97" target="_blank" onclick="LogClickCount(this,336);">云计算</a>
+<a title="iOS6" href="http://www.csdn.net/tag/iOS6" target="_blank" onclick="LogClickCount(this,336);">iOS6</a>
+<a title="Rackspace " href="http://www.csdn.net/tag/rackspace" target="_blank" onclick="LogClickCount(this,336);">Rackspace </a>
+<a title="Web App" href="http://www.csdn.net/tag/webapp" target="_blank" onclick="LogClickCount(this,336);">Web App</a>
+<a title="SpringSide" href="http://www.csdn.net/tag/springside" target="_blank" onclick="LogClickCount(this,336);">SpringSide</a>
+<a title="Maemo" href="http://www.csdn.net/tag/maemo" target="_blank" onclick="LogClickCount(this,336);">Maemo</a>
+<a title="Compuware" href="http://www.csdn.net/tag/compuware" target="_blank" onclick="LogClickCount(this,336);">Compuware</a>
+<a title="大数据" href="http://www.csdn.net/tag/%E5%A4%A7%E6%95%B0%E6%8D%AE" target="_blank" onclick="LogClickCount(this,336);">大数据</a>
+<a title="aptech" href="http://www.csdn.net/tag/aptech" target="_blank" onclick="LogClickCount(this,336);">aptech</a>
+<a title="Perl" href="http://www.csdn.net/tag/perl" target="_blank" onclick="LogClickCount(this,336);">Perl</a>
+<a title="Tornado" href="http://www.csdn.net/tag/tornado" target="_blank" onclick="LogClickCount(this,336);">Tornado</a>
+<a title="Ruby" href="http://www.csdn.net/tag/ruby" target="_blank" onclick="LogClickCount(this,336);">Ruby</a>
+<a title="Hibernate" href="http://www.csdn.net/hibernate" target="_blank" onclick="LogClickCount(this,336);">Hibernate</a>
+<a title="ThinkPHP" href="http://www.csdn.net/tag/thinkphp" target="_blank" onclick="LogClickCount(this,336);">ThinkPHP</a>
+<a title="HBase" href="http://www.csdn.net/tag/hbase" target="_blank" onclick="LogClickCount(this,336);">HBase</a>
+<a title="Pure" href="http://www.csdn.net/tag/pure" target="_blank" onclick="LogClickCount(this,336);">Pure</a>
+<a title="Solr" href="http://www.csdn.net/tag/solr" target="_blank" onclick="LogClickCount(this,336);">Solr</a>
+<a title="Angular" href="http://www.csdn.net/tag/angular" target="_blank" onclick="LogClickCount(this,336);">Angular</a>
+<a title="Cloud Foundry" href="http://www.csdn.net/tag/cloudfoundry" target="_blank" onclick="LogClickCount(this,336);">Cloud Foundry</a>
+<a title="Redis" href="http://www.csdn.net/tag/redis" target="_blank" onclick="LogClickCount(this,336);">Redis</a>
+<a title="Scala" href="http://www.csdn.net/tag/scala" target="_blank" onclick="LogClickCount(this,336);">Scala</a>
+<a title="Django" href="http://www.csdn.net/tag/django" target="_blank" onclick="LogClickCount(this,336);">Django</a>
+<a title="Bootstrap" href="http://www.csdn.net/tag/bootstrap" target="_blank" onclick="LogClickCount(this,336);">Bootstrap</a>
+    </div>
+
+</div>
+  <script language="javascript" type="text/javascript">     
+      $(function(){
+              setTimeout(function(){
+                  $.get("/lmj623565791/svc/GetTagContent",function(data){
+                      $(".tag_list").html(data).show();
+                  });     
+              });
+          },500);                       
+ </script> 
+
+
+<div id="pop_win" style="display:none ;position: absolute; z-index: 10000; border: 1px solid rgb(220, 220, 220); top: 222.5px; left: 630px; opacity: 1; background: none 0px 0px repeat scroll rgb(255, 255, 255);">
+    
+</div>
+<div id="popup_mask"></div>
+<style>
+    #popup_mask
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        z-index: 9999;
+        left: 0px;
+        top: 0px;
+        opacity: 0.3;
+        filter: alpha(opacity=30);
+        display: none;
+    }
+
+</style>
+
+
+
+
+<script type="text/javascript">
+    $(function(){
+        setTimeout(function(){
+            $(".comment_body:contains('回复')").each(function(index,item){
+                var u=$(this).text().split('：')[0].toString().replace("回复","")
+                var thisComment=$(this);
+                if(u)
+                {
+                    $.getJSON("https://passport.csdn.net/get/nick?callback=?", {users: u}, function(a) {
+                        if(a!=null&&a.data!=null&&a.data.length>0)
+                        {
+                            nick=a.data[0].n; 
+                            if(u!=nick)
+                            {
+                                thisComment.text(thisComment.text().replace(u,nick));  
+                            }
+                        }       
+                    });  
+                }
+            });         
+
+        },200);  
+
+        setTimeout(function(){
+            $(".math").each(function(index,value){$(this).find("span").last().css("color","#fff"); })
+        },5000);
+
+        setTimeout(function(){
+            $(".math").each(function(index,value){$(this).find("span").last().css("color","#fff"); })
+        },10000);
+
+        setTimeout(function(){
+            $(".math").each(function(index,value){$(this).find("span").last().css("color","#fff"); })
+        },15000);
+        
+        setTimeout(function(){
+            $("a img[src='http://js.tongji.linezing.com/stats.gif']").parent().css({"position":"absolute","left":"50%"});
+        },300);
+    });
+
+    function loginbox(){
+        var $logpop=$("#pop_win");
+        $logpop.html('<iframe src="https://passport.csdn.net/account/loginbox?service=http://static.blog.csdn.net/callback.htm" frameborder="0" height="600" width="400" scrolling="no"></iframe>');
+
+        $('#popup_mask').css({
+            opacity: 0.5,
+            width: $( document ).width() + 'px',
+            height:  $( document ).height() + 'px'
+        });
+        $('#popup_mask').css("display","block");
+ 
+        $logpop.css( {
+            top: ($( window ).height() - $logpop.height())/ 2  + $( window 
+       ).scrollTop() + 'px',
+            left:($( window ).width() - $logpop.width())/ 2
+        } );
+ 
+        setTimeout( function () {
+            $logpop.show();
+            $logpop.css( {
+                opacity: 1
+            } );
+        }, 200 );
+ 
+        $('#popup_mask').unbind("click");
+        $('#popup_mask').bind("click", function(){
+            $('#popup_mask').hide();
+            var $clopop = $("#pop_win");
+            $("#common_ask_div_sc").css("display","none");
+            $clopop.css( {
+                opacity: 0
+            } );
+            setTimeout( function () {
+                $clopop.hide();
+            }, 350 );
+            return false;
+        });
+    }   
+
+</script>
+ <script language="javascript" type="text/javascript" src="http://ads.csdn.net/js/async_new.js"></script>      
+
+
+                        <div class="clear">
+                        </div>
+                    </div>                   
+                
+            </div>
+                   
+           <div id="side">
+               
+    <div class="side">
+<div id="panel_Profile" class="panel">
+<ul class="panel_head"><span>个人资料</span></ul>
+<ul class="panel_body profile">
+<div id="blog_userface">
+    <a href="http://my.csdn.net/lmj623565791" target="_blank">
+    <img src="./index_files/1_lmj623565791.jpg" title="访问我的空间" style="max-width:90%">
+    </a>
+    <br>
+    <span><a href="http://my.csdn.net/lmj623565791" class="user_name" target="_blank">鸿洋_</a></span>
+</div>
+<div class="interact">
+
+    <a href="javascript:void(0);" class="attent" id="span_add_follow" title="[加关注]"></a>
+
+ <a href="javascript:void(0);" class="letter" title="[发私信]" onclick="window.open(&#39;http://msg.csdn.net/letters/model?receiver=lmj623565791&#39;,&#39;_blank&#39;,&#39;height=350,width=700&#39;);_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_sixin&#39;])"></a>  
+</div>
+<div id="blog_medal">
+                       <div class="ico_expert" onclick="javascript:location=&#39;http://blog.csdn.net/experts/rule.html&#39;" title="CSDN认证专家" style="cursor:pointer;width:60px;height:60px;background:url(&#39;http://c.csdnimg.cn/jifen/images/xunzhang/xunzhang/bokezhuanjiamiddle.png&#39;) no-repeat"></div>
+                <div id="bms_box">
+                                            <a target="_blank">
+                                                    <img src="./index_files/zhuanlandaren.png" onmouseover="m_over_m(this,2)" onmouseout="m_out_m()" alt="5">
+                                            </a>
+                                            <a target="_blank">
+                                                    <img src="./index_files/bokezhixing.png" onmouseover="m_over_m(this,6)" onmouseout="m_out_m()" alt="1">
+                                            </a>
+               </div>
+</div>
+<ul id="blog_rank">
+    <li>访问：<span>11444190次</span></li>
+    <li>积分：<span>43786</span> </li>    
+    <li>等级： <span style="position:relative;display:inline-block;z-index:1">
+            <img src="./index_files/blog8.png" alt="" style="vertical-align: middle;" id="leveImg">
+            <div id="smallTittle" style=" position: absolute;  left: -24px;  top: 25px;  text-align: center;  width: 101px;  height: 32px;  background-color: #fff;  line-height: 32px;  border: 2px #DDDDDD solid;  box-shadow: 0px 2px 2px rgba (0,0,0,0.1);  display: none;   z-index: 999;">
+            <div style="left: 42%;  top: -8px;  position: absolute;  width: 0;  height: 0;  border-left: 10px solid transparent;  border-right: 10px solid transparent;  border-bottom: 8px solid #EAEAEA;"></div>
+            积分：43786 </div>
+        </span>  </li>
+    <li>排名：<span>第59名</span></li>
+</ul>
+<ul id="blog_statistics">
+    <li>原创：<span>193篇</span></li>
+    <li>转载：<span>0篇</span></li>
+    <li>译文：<span>6篇</span></li>
+    <li>评论：<span>12646条</span></li>
+</ul>
+</ul>
+</div>
+
+
+
+
+<div id="custom_column_37972499" class="panel">
+<ul class="panel_head"><span>我的微信公众号</span></ul>
+<ul class="panel_body">
+<a href="https://github.com/hongyangAndroid/hongyangWeixinArticles">点击直达推送文章汇总</a><hr>
+
+长期为您推荐优秀博文、开源项目、视频等，进入还有好玩的等着你，欢迎扫一扫。
+<img style="width:95%;" src="./index_files/1422600516_2905.jpg">
+</ul>
+</div>
+
+<div id="custom_column_36298017" class="panel">
+<ul class="panel_head"><span>联系方式</span></ul>
+<ul class="panel_body">
+<wb:follow-button uid="3165018720" type="red_1" width="67" height="24"><div class="WB_widget WB_follow_ex" style="width: 67px; height: 24px; overflow: hidden;"><div class="follow_btn_line" node-type="inner"><a class="follow_btn status_followed" node-type="followBtn" target="_blank" title="已关注" href="http://weibo.com/u/3165018720"><cite class="follow_btn_inner"><u class="WB_ico_logo"></u><cite class="follow_text">新动态</cite></cite></a></div></div></wb:follow-button>
+<hr>
+<a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=2_3p6O7t7uzi6puqqvW4tLY" style="text-decoration:none;"><img src="./index_files/1431844286_6921.png"></a>
+<hr>
+
+QQ群：
+<ul>
+<li style="color:red;font-size=22px;font-weight:bolder;display:none;">55032675</li>
+<li style="color:red;font-size=22px;font-weight:bolder;display:none;">423372824</li>
+<li style="color:red;font-size=22px;font-weight:bolder;">497438697</li>
+
+<li>请勿重复加群，Thx</li>
+</ul>
+</ul>
+</div><div id="panel_Category" class="panel">
+<ul class="panel_head"><span>文章分类</span></ul>
+<ul class="panel_body">    
+                 <li>
+                    <a href="http://blog.csdn.net/lmj623565791/article/category/3147547" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">【Android 5.x】</a><span>(11)</span>
+                </li>
+                 <li>
+                    <a href="http://blog.csdn.net/lmj623565791/article/category/2680597" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">【Android 精彩案例】</a><span>(37)</span>
+                </li>
+                 <li>
+                    <a href="http://blog.csdn.net/lmj623565791/article/category/2680605" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">【Android 源码解析】</a><span>(29)</span>
+                </li>
+                 <li>
+                    <a href="http://blog.csdn.net/lmj623565791/article/category/2680595" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">【Android 自定义控件实战】</a><span>(29)</span>
+                </li>
+                 <li>
+                    <a href="http://blog.csdn.net/lmj623565791/article/category/2680591" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">【Android 自定义控件之起步】</a><span>(7)</span>
+                </li>
+                 <li>
+                    <a href="http://blog.csdn.net/lmj623565791/article/category/2518197" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">【Android 快速开发】</a><span>(12)</span>
+                </li>
+                 <li>
+                    <a href="http://blog.csdn.net/lmj623565791/article/category/2680601" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">【Android 原生开发游戏】</a><span>(3)</span>
+                </li>
+                 <li>
+                    <a href="http://blog.csdn.net/lmj623565791/article/category/2132087" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">【Java 并发专题】</a><span>(15)</span>
+                </li>
+                 <li>
+                    <a href="http://blog.csdn.net/lmj623565791/article/category/2210589" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">【android 进阶之路】</a><span>(70)</span>
+                </li>
+                 <li>
+                    <a href="http://blog.csdn.net/lmj623565791/article/category/2206597" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">【Java 设计模式】</a><span>(10)</span>
+                </li>
+                 <li>
+                    <a href="http://blog.csdn.net/lmj623565791/article/category/2392939" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">【Android 百度地图】</a><span>(4)</span>
+                </li>
+                 <li>
+                    <a href="http://blog.csdn.net/lmj623565791/article/category/2335135" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">【html5 css3精彩案例】</a><span>(14)</span>
+                </li>
+                 <li>
+                    <a href="http://blog.csdn.net/lmj623565791/article/category/2188109" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">【Android github 控件】</a><span>(10)</span>
+                </li>
+                 <li>
+                    <a href="http://blog.csdn.net/lmj623565791/article/category/2170321" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">【Android 基础】</a><span>(16)</span>
+                </li>
+                 <li>
+                    <a href="http://blog.csdn.net/lmj623565791/article/category/2218967" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">【Javascript 】</a><span>(9)</span>
+                </li>
+                 <li>
+                    <a href="http://blog.csdn.net/lmj623565791/article/category/2386657" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">【rabbitMQ 用法】</a><span>(5)</span>
+                </li>
+                 <li>
+                    <a href="http://blog.csdn.net/lmj623565791/article/category/6250701" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">【Android微知识点】</a><span>(4)</span>
+                </li>
+</ul>
+</div>
+
+<div id="custom_column_37398105" class="panel">
+<ul class="panel_head"><span>友情链接</span></ul>
+<ul class="panel_body">
+<ul>
+  <li style="padding:3px;"><a target="_blank" href="http://blog.csdn.net/guolin_blog">郭霖的博客</a></li>
+ <li style="padding:3px;"><a target="_blank" href="http://blog.csdn.net/xiaanming">夏安明的博客</a></li>
+ <li style="padding:3px;"><a target="_blank" href="http://blog.csdn.net/singwhatiwanna">任玉刚的博客</a></li>
+ <li style="padding:3px;"><a target="_blank" href="http://blog.csdn.net/qibin0506">亓斌的博客</a></li>
+ <li style="padding:3px;"><a target="_blank" href="http://www.konghao.org/index">敬佩的孔老师</a></li>
+ <li style="padding:3px;"><a target="_blank" href="http://blog.csdn.net/foruok">foruok的订阅号程序视界</a></li>
+<li style="padding:3px;"><a target="_blank" href="http://blog.csdn.net/wangyaninglm">OpenCV大神shiter</a></li>
+<li style="padding:3px;"><a target="_blank" href="http://www.jikedaohang.com/">专为Android程序员的导航</a></li>
+ <li style="padding:3px;"><a target="_blank" href="http://www.jcodecraeer.com/plus/list.php?tid=16">泡在网上的日子</a></li>
+</ul>
+</ul>
+</div><div id="panel_Category" class="panel">
+    <ul class="panel_head"><span>博客专栏</span></ul>
+    <ul class="panel_body" id="sp_column">
+    <table cellpadding="0" cellspacing="0"><tbody><tr>
+    <td style="padding:10px 10px 0 0;">
+    <a href="http://blog.csdn.net/column/details/html5css3.html" target="_blank"><img src="./index_files/20151123175920192" style="width:75px;height:75px;"></a>
+    </td>
+    <td style="padding:10px 0; vertical-align:top;">
+    <a href="http://blog.csdn.net/column/details/html5css3.html" target="_blank">HTML5 &amp; CSS3 实战</a>
+    <p>文章：11篇</p>
+    <span>阅读：158991</span>
+    </td>
+    </tr></tbody></table>
+    <table cellpadding="0" cellspacing="0"><tbody><tr>
+    <td style="padding:10px 10px 0 0;">
+    <a href="http://blog.csdn.net/column/details/code-design.html" target="_blank"><img src="./index_files/20151123175823567" style="width:75px;height:75px;"></a>
+    </td>
+    <td style="padding:10px 0; vertical-align:top;">
+    <a href="http://blog.csdn.net/column/details/code-design.html" target="_blank">设计模式融入生活</a>
+    <p>文章：10篇</p>
+    <span>阅读：94017</span>
+    </td>
+    </tr></tbody></table>
+    <table cellpadding="0" cellspacing="0"><tbody><tr>
+    <td style="padding:10px 10px 0 0;">
+    <a href="http://blog.csdn.net/column/details/android110.html" target="_blank"><img src="./index_files/20151123175818724" style="width:75px;height:75px;"></a>
+    </td>
+    <td style="padding:10px 0; vertical-align:top;">
+    <a href="http://blog.csdn.net/column/details/android110.html" target="_blank">Android 精彩案例</a>
+    <p>文章：67篇</p>
+    <span>阅读：4734065</span>
+    </td>
+    </tr></tbody></table>
+    </ul>
+</div><div id="hotarticls" class="panel">
+<ul class="panel_head">
+    <span>       
+阅读排行    </span>
+</ul>
+
+<ul class="panel_body itemlist">
+<li>
+<a href="http://blog.csdn.net/lmj623565791/article/details/48129405" title="Android Https相关完全解析 当OkHttp遇到Https">Android Https相关完全解析 当OkHttp遇到Https</a><span>(1543506)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/lmj623565791/article/details/37970961" title="Android Fragment 真正的完全解析（上）">Android Fragment 真正的完全解析（上）</a><span>(543716)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/lmj623565791/article/details/45059587" title="Android RecyclerView 使用完全解析 体验艺术般的控件">Android RecyclerView 使用完全解析 体验艺术般的控件</a><span>(468630)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/lmj623565791/article/details/47911083" title="Android OkHttp完全解析 是时候来了解OkHttp了">Android OkHttp完全解析 是时候来了解OkHttp了</a><span>(359053)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/lmj623565791/article/details/24252901" title="Android 自定义View (一)">Android 自定义View (一)</a><span>(236866)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/lmj623565791/article/details/38067475" title="Android 属性动画（Property Animation） 完全解析 （上）">Android 属性动画（Property Animation） 完全解析 （上）</a><span>(224069)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/lmj623565791/article/details/37992017" title="Android Fragment 真正的完全解析（下）">Android Fragment 真正的完全解析（下）</a><span>(204380)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/lmj623565791/article/details/45460089" title="Android 屏幕适配方案">Android 屏幕适配方案</a><span>(181943)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/lmj623565791/article/details/38339817" title="Android 手把手教您自定义ViewGroup（一）">Android 手把手教您自定义ViewGroup（一）</a><span>(169431)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/lmj623565791/article/details/38173061" title="Android 自定义RecyclerView 实现真正的Gallery效果">Android 自定义RecyclerView 实现真正的Gallery效果</a><span>(148905)</span>
+</li>
+</ul>
+</div>
+<div id="newcomments" class="panel">
+<ul class="panel_head"><span>最新评论</span></ul>
+<ul class="panel_body itemlist">
+    <li>
+   
+         <a href="http://blog.csdn.net/lmj623565791/article/details/38352503#comments">Android 自定义ViewGroup 实战篇 -&gt; 实现FlowLayout</a>
+    <p style="margin:0px;"><a href="http://blog.csdn.net/xiaowan0404" class="user_name">xiaowan0404</a>:
+@sinat_29874521:应该是布局style中没有加style或者是代码中没有处理margi...
+    </p>
+    </li>
+    <li>
+   
+         <a href="http://blog.csdn.net/lmj623565791/article/details/23960391#comments">Java OCR tesseract 图像智能字符识别技术 Java代码实现</a>
+    <p style="margin:0px;"><a href="http://blog.csdn.net/baiyuzl0917" class="user_name">baiyuzl0917</a>:
+很好 按照你这个来做确实可以识别
+    </p>
+    </li>
+    <li>
+   
+         <a href="http://blog.csdn.net/lmj623565791/article/details/23960391#comments">Java OCR tesseract 图像智能字符识别技术 Java代码实现</a>
+    <p style="margin:0px;"><a href="http://blog.csdn.net/baiyuzl0917" class="user_name">baiyuzl0917</a>:
+不错 最近一直在研究这个
+    </p>
+    </li>
+    <li>
+   
+         <a href="http://blog.csdn.net/lmj623565791/article/details/49883661#comments">Android 热补丁动态修复框架小结</a>
+    <p style="margin:0px;"><a href="http://blog.csdn.net/haibo_bear" class="user_name">haibo_bear</a>:
+洋神前面这些讲解都非常棒，只是最后这个例子，我感觉不是很恰当。就是在我们需要打补丁包的时候，应该不是...
+    </p>
+    </li>
+    <li>
+   
+         <a href="http://blog.csdn.net/lmj623565791/article/details/43371299#comments">Android 打造形形色色的进度条  实现可以如此简单</a>
+    <p style="margin:0px;"><a href="http://blog.csdn.net/qq_15295565" class="user_name">牛逼的安卓人</a>:
+为什么我下载的不能用呢，缺少jar包了
+    </p>
+    </li>
+    <li>
+   
+         <a href="http://blog.csdn.net/lmj623565791/article/details/53370414#comments">Android 反编译初探 应用是如何被注入广告的</a>
+    <p style="margin:0px;"><a href="http://blog.csdn.net/qq_24918901" class="user_name">趣乐android守护者</a>:
+@u012131702:二  你得出结论就不验证一下？小米敢这么做 就不怕被别人起诉？
+    </p>
+    </li>
+    <li>
+   
+         <a href="http://blog.csdn.net/lmj623565791/article/details/53370414#comments">Android 反编译初探 应用是如何被注入广告的</a>
+    <p style="margin:0px;"><a href="http://blog.csdn.net/gaoguangping" class="user_name">gaoguangping</a>:
+签名不就是为了防止这件事情的发生么?
+    </p>
+    </li>
+    <li>
+   
+         <a href="http://blog.csdn.net/lmj623565791/article/details/41722441#comments">Android SurfaceView实战  打造抽奖转盘</a>
+    <p style="margin:0px;"><a href="http://blog.csdn.net/qq_36250144" class="user_name">柠檬不萌_</a>:
+问下大神，转盘我想用一张图片代替，怎么做呢
+    </p>
+    </li>
+    <li>
+   
+         <a href="http://blog.csdn.net/lmj623565791/article/details/38960443#comments">Android View 事件分发机制 源码解析 （上）</a>
+    <p style="margin:0px;"><a href="http://blog.csdn.net/u013226053" class="user_name">堕落方能自由</a>:
+不明觉厉啊
+    </p>
+    </li>
+    <li>
+   
+         <a href="http://blog.csdn.net/lmj623565791/article/details/51118836#comments">为RecyclerView打造通用Adapter 让RecyclerView更加好用</a>
+    <p style="margin:0px;"><a href="http://blog.csdn.net/u011208377" class="user_name">根号01</a>:
+不只是我方法错误还是什么，会出现复用性问题，text设置颜色
+    </p>
+    </li>
+</ul>
+</div>
+
+
+<div id="custom_column_40886443" class="panel">
+<ul class="panel_head"><span>2015博客之星评选</span></ul>
+<ul class="panel_body">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a2be8a9315245759d12f8ce94df7f7ac";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</ul>
+</div>
+
+<div id="custom_column_41351807" class="panel">
+<ul class="panel_head"><span>统计</span></ul>
+<ul class="panel_body">
+<div style="position:fixed;bottom: 0;magin:0 auto; left:0;right:0;z-index:1000;border-top:1px dashed #aaa;font-weight:bold;background-color:#fff;font-family: &#39;Microsoft YaHei&#39;;padding:4px;text-align:center;">
+
+<div style=""><a href="http://blog.csdn.net/vote/candidate.html?username=lmj623565791" style="text-decoration:none;line-height:40px;vertical-align:middle;color:#EA4A3E;font-size:1.5em;" target="_blank">我是鸿洋，正在参加2016年博客之星评选，希望你能投我一票。</a><a href="http://blog.csdn.net/vote/candidate.html?username=lmj623565791"><img style="height:40px;vertical-align:middle;" src="./index_files/1449721880_6460.png"></a>
+</div>
+
+</div>
+</ul>
+</div>    </div>
+    <div class="clear">
+    </div>
+
+
+                 <!-- 广告位开始 --> 
+                    <ins data-revive-zoneid="189" data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57"></ins> 
+                <!-- 广告位结束 -->
+
+           </div>   
+
+            <div class="clear">
+            </div>
+        </div>
+
+        
+
+<script type="text/javascript" src="./index_files/cnick.js"></script>
+<script type="text/javascript" src="./index_files/newblog.min.js"></script>
+
+
+<script type="text/javascript" src="./index_files/showblogmedal.ashx"></script>
+<script type="text/javascript" src="./index_files/JavaScript1.js"></script><link rel="stylesheet" type="text/css" href="./index_files/pub_footer_2014.css"><div class="pub_fo"><div id="pub_footerall" class="pub_footer_new"><dl><dt></dt> <dd class="foot_sub_menu"><a href="http://www.csdn.net/company/about.html" target="_blank">公司简介</a><span>|</span><a href="http://www.csdn.net/company/recruit.html" target="_blank">招贤纳士</a><span>|</span><a href="http://www.csdn.net/company/marketing.html" target="_blank">广告服务</a><span>|</span><a href="http://www.csdn.net/company/contact.html" target="_blank">联系方式</a><span>|</span><a href="http://www.csdn.net/company/statement.html" target="_blank">版权声明</a><span>|</span><a href="http://www.csdn.net/company/layer.html" target="_blank">法律顾问</a><span>|</span><a href="mailto:webmaster@csdn.net">问题报告</a><span>|</span><a target="_blank" href="http://www.csdn.net/friendlink.html">合作伙伴</a><span>|</span><a href="http://bbs.csdn.net/forums/Service" target="_blank">论坛反馈</a></dd><dd class="foot_contact"><a href="javascript:void(0);" target="_blank" class="qq">网站客服</a><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2251809102&amp;site=qq&amp;menu=yes" target="_blank" class="qq">杂志客服</a><a href="http://e.weibo.com/csdnsupport/profile" target="_blank" class="weibo">微博客服</a><a href="mailto:webmaster@csdn.net" class="email" title="联系邮箱">webmaster@csdn.net</a><span class="phone" title="服务热线">400-600-2320</span><span class="interval">|</span><span>北京创新乐知信息技术有限公司 版权所有</span><span class="interval">|</span><span>江苏知之为计算机有限公司</span><span class="interval">|</span><span>江苏乐知网络技术有限公司</span></dd><dd class="foot_copyright"><span>京&nbsp;ICP&nbsp;证&nbsp;09002463&nbsp;号</span><span class="interval">|</span><span>Copyright © 1999-2016, CSDN.NET, All Rights Reserved&nbsp;</span><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202001032100010" target="_blank"><img src="./index_files/gongshang_logos.gif" alt="GongshangLogo" title=""></a></dd></dl></div></div><div id="note1" class="csdn_note" style="display:none; position:absolute; z-index:9999; width:440px">  <span class="notice_top_arrow"><span class="inner"></span></span>  <div class="box"></div></div><div class="csdn_notice_tip" style="display:none; position:absolute; z-index:9990; width:170px">  <iframe src="./index_files/saved_resource(2).html" frameborder="0" scrolling="no" style="z-index:-1;position:absolute;top:0;left:0;width:100%;height:100%;background:transparent"></iframe>  <div class="tip_text">您有<strong>0</strong>条新通知</div>  <a href="javascript:void 0" class="close2"></a></div><script id="noticeScript" type="text/javascript" btnid="header_notice_num" wrapid="note1" count="5" subcount="5" src="./index_files/notify.js"></script>
+
+    <script type="text/javascript" src="./index_files/login.js"></script>
+<script type="text/javascript">document.write("<img src=http://counter.csdn.net/pv.aspx?id=24 border=0 width=0 height=0>");</script><img src="./index_files/pv.aspx" border="0" width="0" height="0">
+<script type="text/javascript" src="./index_files/counter.js"></script><script type="text/javascript" charset="UTF-8" src="http://message.csdn.net/msg.popup.js"></script>
+<script type="text/javascript" src="http://ad.csdn.net/scripts/ad-blog.js"></script>
+<script type="text/javascript">
+    $(function () {
+        function __get_code_toolbar(snippet_id) {
+            return $("<span class='tracking-ad' data-mod='popu_167'><a href='https://code.csdn.net/snippets/"
+                    + snippet_id
+                    + "' target='_blank' title='在CODE上查看代码片'  style='text-indent:0;'><img src='https://code.csdn.net/assets/CODE_ico.png' width=12 height=12 alt='在CODE上查看代码片' style='position:relative;top:1px;left:2px;'/></a></span>"
+                    + "<span class='tracking-ad' data-mod='popu_170'><a href='https://code.csdn.net/snippets/"
+                    + snippet_id
+                    + "/fork' target='_blank' title='派生到我的代码片' style='text-indent:0;'><img src='https://code.csdn.net/assets/ico_fork.svg' width=12 height=12 alt='派生到我的代码片' style='position:relative;top:2px;left:2px;'/></a></span>");
+        }
+        
+        $("[code_snippet_id]").each(function () {
+            __s_id = $(this).attr("code_snippet_id");
+            if (__s_id != null && __s_id != "" && __s_id != 0 && parseInt(__s_id) > 70020) {
+                __code_tool = __get_code_toolbar(__s_id);
+                $(this).prev().find(".tools").append(__code_tool);
+            }
+        });
+
+        $(".bar").show();
+    });
+</script>
+
+
+
+
+
+    </div><input type="hidden" id="aa_g_data_ids">
+      <!--new top-->
+    
+    <script id="csdn-toolbar-id" btnid="header_notice_num" wrapid="note1" count="5" subcount="5" type="text/javascript" src="./index_files/toolbar.js"></script>
+     <!--new top-->
+   
+    <link href="./index_files/ask_float_block.css" type="text/css" rel="stylesheet">
+    <script language="JavaScript" type="text/javascript" src="./index_files/wmd.js"></script>
+    <script language="JavaScript" type="text/javascript" src="./index_files/showdown.js"></script>
+    <script language="JavaScript" type="text/javascript" src="./index_files/prettify.js"></script>
+    <script language="JavaScript" type="text/javascript" src="./index_files/ask_float_block.js"></script>
+   
+
+  <div id="a52b5334d" style="width: 1px; height: 1px; display: none;">
+                    <script id="adJs52b5334" src="http://ads.csdn.net/js/opt/52b5334.js?t=0.33674471197236056"></script>
+                    <script>document.getElementById("adJs52b5334").src = "http://ads.csdn.net/js/opt/52b5334.js?t=" + Math.random();</script>
+   </div>
+
+    <link rel="stylesheet" href="./index_files/blog_code.css">
+    <script type="text/javascript" src="./index_files/saveToCode.js"></script>
+      <script type="text/javascript" src="http://csdnimg.cn/rabbit/tracking-ad/main.js?75eacd8"></script>
+
+   
+ <div id="tag-suggest-pop">
+  <div class="relative">
+    <div class="close"></div>
+    <div class="content"></div>
+  </div>
+</div><link rel="stylesheet" type="text/css" media="screen" href="./index_files/ask_float_fonts_css-6b30a53970eb5c3a2a045e3df585b475.css"><div data-mod="popu_64" class="csdn-tracking-statistics" chg-blk="0"><a id="com-quick-reply" title="快速回复" style="top:316px"></a><a id="com-d-top-a" style="top: 354px; display: inline;" title="返回顶部" onclick=""></a> </div><div class="pop_edit ask_second comm_ask_second"><h3>提问</h3><span class="ask_float_span">您的问题将会被发布在“<a class="ask_float_channel" href="http://ask.csdn.net/" target="_blank" style="cursor:pointer">技术问答</a>”频道</span><a href="http://blog.csdn.net/lmj623565791/article/details/51319147#" nodetype="close" class="close">×</a><div class="context"><div class="err_div"><span class="err_ico"></span><span class="err_txt">该问题已存在，请勿重复提问</span></div><div class="input_div"><input id="askInputSecond" type="text" style="font-size:14px;" placeholder="问题标题"></div><div class="cm_box"><div class="cm_dialog"></div> <div class="pop_cm cm_add_link"><input type="text" placeholder="链接内容" id="af_cm_link_txt"><input type="text" placeholder="链接地址" id="af_cm_link_url"><input type="text" placeholder="链接提示" id="af_cm_link_tit"><div class="text-right"><span class="btn btn-default btn-sm" id="add_link_btn">插入链接</span> </div> </div><div class="pop_cm cm_add_img"><div class="nav-tabs"><a class="img_tab active" href="http://blog.csdn.net/lmj623565791/article/details/51319147#tab_upload">本地上传</a><a class="img_tab" href="http://blog.csdn.net/lmj623565791/article/details/51319147#tab_weburl">网络图片</a></div><div class="tab_panel active" id="tab_upload"><div class="set_img"><iframe src="./index_files/upload.html"></iframe></div></div><div class="tab_panel" id="tab_weburl"><input type="text" placeholder="图片地址" id="af_cm_img_url"><input type="text" placeholder="图片说明" id="af_cm_img_alt"><div class="text-right"><span class="btn btn-default btn-sm" id="add_img_btn">插入图片</span> </div></div> </div></div> <textarea id="editor_all" rows="8" style="display: none;"></textarea><div class="editor-toolbar"><i class="separator">|</i><a class="icon-headline" title="标题一（Ctrl+Alt+1）"></a><a class="icon-heading" title="标题二（Ctrl+Alt+2）"></a><a class="icon-bold" title="粗体（Ctrl+B）"></a><a class="icon-italic" title="斜体（Ctrl+I）"></a><i class="separator">|</i><a class="icon-quote-left" title="引用（Ctrl+’）"></a><a class="icon-code" title="插入代码片（Ctrl+,）"></a><a class="icon-list-ul" title="无序列表（Ctrl+L）"></a><a class="icon-list-ol" title="有序列表（Ctrl+Alt+L）"></a><i class="separator">|</i><a class="icon-link" title="添加链接（Ctrl+K）"></a><a class="icon-picture" title="添加图片（Ctrl+Alt+I）"></a><i class="separator">|</i><a class="icon-reply" title="撤退（Ctrl+Z）"></a><a class="icon-share-alt" title="前进（Ctrl+Shift+Z）"></a><i class="separator">|</i><a class="icon-info" href="http://ask.csdn.net/pages/markdown" target="_blank" title="markdown语法参考"></a><a class="icon-preview" title="预览"></a><i class="separator">|</i></div><div class="CodeMirror cm-s-paper CodeMirror-focused"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;" tabindex="0"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div><div class="editor-statusbar"><span class="lines">0</span><span class="words">0</span><span class="cursor">0:0</span></div><div class="div_tags clearfix"><div id="divSearchTags" class="tags_con"><input type="text"></div><input type="hidden" name="txtSearchTags"></div><div id="ask2_tagRecomm_div" class="drt_tagRecomm tracking-ad" data-mod="popu_73"><span class="drt_tit">推荐标签：</span></div></div><div class="success"><div class="left_area"><input id="chk_cb" type="checkbox"><span class="wyxs">我要悬赏</span><input id="cb_num" class="cb_num" readonly="true"><span class="phib_rii"><span> 币</span></span></div><a href="http://blog.csdn.net/lmj623565791/article/details/51319147#" nodetype="cancel" class="cancel">取消</a><a href="http://blog.csdn.net/lmj623565791/article/details/51319147#" nodetype="ok" class="ok">发布</a></div></div><div id="common_ask_div_sc" class="searchContainer"><div class="sTitle">可能存在类似的问题：</div><div class="sFooter"><a class="sFirstNewAsk">我想提一个新问题</a></div></div><div id="mask_code"></div><div class="gist_edit"><div class="save_snippets clearfix"><div class="tit"><h3>保存代码片</h3><span>整理和分享保存的代码片，请访问<a href="https://code.csdn.net/snippets_manage" target="_blank">代码笔记</a></span></div><div class="con_form"><ul class="gist_edit_list clearfix"><li><span class="red">*</span><span class="txt">标题</span><input id="form_title" class="form-input" placeholder="如何利用github打造博客专属域名" type="text"></li><li><span class="red">*</span><span class="txt">描述</span><textarea id="form-textarea" class="form-textarea" placeholder="如何利用github打造博客专属域名： http://blog.csdn.net/lmj623565791/article/details/51319147"></textarea></li><li><span class="red">&nbsp;</span><span class="txt">标签</span><div id="divSearchTags"><span class="label blog_tag"><span>github</span><a title="Removing tag" href="javascript:;">x</a></span><span class="label blog_tag"><span>个人博客</span><a title="Removing tag" href="javascript:;">x</a></span><span class="label blog_tag"><span>域名</span><a title="Removing tag" href="javascript:;">x</a></span><input id="insertTag" class="insertTag" placeholder="请输入标签，按Enter生成(最多5项)" type="text" value="" name="insertTag" maxlength="21" style="color: rgb(51, 51, 51);"><input id="OrganTag" class="OrganTag" type="hidden" name="OrganTag" value="github,个人博客,域名,"><input id="OldOrganTag" class="OldOrganTag" type="hidden" name="OldOrganTag" value=""><input type="hidden" name="txtSearchTags"></div></li></ul></div><div class="bottom-bar"><a href="javascript:;" class="btn-submit btn-cancel">取消</a><span class="tracking-ad" data-mod="popu_250"><a class="btn-submit btn-confirm" href="javascript:;">确定</a></span></div></div></div><div id="cntvlive2-is-installed"></div></body></html>
